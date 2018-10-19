@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-in">
+<head>
+    <title> Physics study </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="phycss.css">
+    <link rel="icon" href="img/favicon.png">
+    <script src="phyScript.js"></script>
+    </head>
+    <body>
+    <header>
+        <button id="logo">
+        <img src="img/favicon.png" class="logoimg"/></button>
+        <form action="http://www.ilearn.com">
+        <button id="home" type="submit"><img src="img/home.png" alt="" class="homeicon" />Home</button></form>
+        <button id="study" onclick="showOrHide(boxstudy);"><img src="img/study.png" alt="" class="studyicon" />Study<img src="img/drpdwn.png" alt="" id="drpdwn" /></button>
+        <button id="more"><img src="img/more.png" alt="" class="moreicon" />More</button>
+        <button onclick="supShow(supportbox)" id="support"><img src="img/support.png" alt="" class="supporticon" /></button>
+        <button onclick="helpShow(helpbox)" id="help"><img src="img/help.png" alt="" class="helpicon" /></button>
+        </header>
+        <div id="boxstudy">
+
+        <!-- <div id="btn1After"></div>
+        <div id="btn2Before"></div>
+        <div id="btn2After"></div>
+        <div id="btn3After"></div>
+        <div id="btn3Before"></div> -->
+            <button onclick="phyBoxShow(phyBox);" id="btnS1">PHYSICS-I</button>
+            <div id="phyBox" style="text-align: center; font-size: 50px; color: floralwhite;">
+            Not Available.....<br />
+                try Physics-II.....
+            </div>
+            <button onclick="chemBoxShow(chemBox);" id="btnS2">PHYSICS-II</button>
+            <div id="chemBox">
+            <div class="phy21">
+                <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-I</h1>
+                </div>
+            <div class="phy22">
+                <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-II</h1>
+                <a href="http://" class="lessons">Themodinamic</a><br />
+                <a href="http://" class="lessons">Black body and blackbody radiation</a><br />
+                <a href="http://" class="lessons">Interruption</a><br />
+                <a href="http://" class="lessons"></a><br />
+                <a href="http://" class="lessons"></a><br />
+                </div>
+            <div class="phy23">
+                <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-III</h1>
+                </div>
+
+            </div>
+            <button onclick="mathBoxShow(mathBox);" id="btnS3">PHYSICS-III</button>
+            <div id="mathBox" style="text-align: center; font-size: 50px; color: floralwhite;">
+             Not Available.....<br />
+                try Physics-II.....
+            </div>
+            <button onclick="" id="btnS4" disabled>---</button>
+            <button onclick="" id="btnS5" disabled>---</button>
+            <button onclick="boxStudyHide()" id="StdClose">x</button>
+            <div class="c1"></div>
+            <div class="c2"></div>
+        </div>
+
+        <div id="supportbox">
+        <h1 class="suptext">Support</h1>
+        <a href="http://" class="suplink"><img src="img/" class="supicon sup1" alt="" />facebook_address</a><br /><br /><br />
+        <a href="http://" class="suplink"><img src="img/" class="supicon sup2" alt="" />ramnarayan942000@gmail.com</a><br /><br /><br />
+        <a href="http://" class="suplink"><img src="img/" class="supicon sup3" alt="" />Google+_address</a><br /><br /><br />
+        <a href="http://" class="suplink"><img src="img/" class="supicon sup4" alt="" />Whatsapp_address</a><br /><br /><br />
+        <a href="http://" class="suplink"><img src="img/" class="supicon sup5" alt="" />YouTUBE_address</a><br /><br /><br />
+
+        </div>
+        <div id="helpbox">
+
+
+        </div>
+    <div id="container">
+        <div id="content">
+            <div id="phyCnt">
+			        <img src="" class="phyOne" alt="">
+			        <img src="" class="phyTwo" alt="">
+			        <img src="" class="phyThree" alt="">
+			        <img src="" class="phyFour" alt="">
+			        <img src="" class="phyFive" alt="">
+			        <img src="" class="phySix" alt="">
+			        <img src="" class="phySeven" alt="">
+			        <img src="" class="phyEight" alt="">
+        </div>
+        </div>
+        <div id="footer">
+
+
+        </div>
+    </div>
+
+
+    </body>
+</html>

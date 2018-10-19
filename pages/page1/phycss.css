@@ -1,0 +1,424 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Monoton');
+/*end*/
+::-webkit-scrollbar{
+  width: 1px;
+}
+body{
+	background-color: #1b2e3e;
+}
+header{
+    position: fixed;
+    left: 0px;
+    width:100%;
+    top: 0px;
+    height: 65px;
+    background-color: #228340;
+    z-index: 120;
+}
+#container{
+	position: absolute;
+	width: 100%;
+	height: 1000px;
+	top: 65px;
+	left: 0%;
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 4fr 1fr;
+	margin: 0px;
+	padding: 0px;
+}
+.logoimg{
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    position: absolute;
+    width: 140px;
+    background-color: transparent;
+    border: none;
+}
+#home{
+    position: absolute;
+    top: 14px;
+    left: 180px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    font-family: cursive;
+    color: #ffffff;
+}
+#study{
+    position: absolute;
+    top: 14px;
+    left: 280px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    font-family: cursive;
+    color: #ffffff;
+}
+.studyicon{
+    width: 20px;
+}
+#drpdwn{
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    top: 19px;
+}
+.homeicon{
+    width: 20px;
+    height:17px;
+    position: absolute;
+    left:-15px;
+    top: 14px;
+
+}
+#more{
+    position: absolute;
+    top: 14px;
+    left: 440px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    font-family: cursive;
+    color: #ffffff;
+}
+.moreicon{
+    width: 30px;
+    height:9px;
+    position: absolute;
+    left:30px;
+    top: -2px;
+}
+#help{
+    position: absolute;
+    top: 10px;
+    left: 1310px;
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+    font-family: cursive;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+.helpicon{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#support{
+    position: absolute;
+    top: 3px;
+    left: 1220px;
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+    font-family: cursive;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+}
+.supporticon{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#boxstudy{
+    position: absolute;
+    top: 66px;
+    left: 300px;
+    width: 800px;
+    height: 390px;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.39);
+    visibility: hidden;
+}
+#StdClose{
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    top: -5px;
+    left: 96.5%;
+    font-size: 30px;
+    color: red;
+    z-index: 103;
+}
+#btnS1, #btnS2, #btnS3, #btnS4, #btnS5{
+    background-color: green;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    font-family: Montserrat;
+    box-shadow: 1px 1px 11px 1px rgba(255, 245, 0, 0.46);
+    margin: 0px;
+}
+#btn1After{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: #185004 20px solid;
+    border-top: transparent 20px solid;
+    border-left: #185004 20px solid;
+    border-right: transparent 20px solid;
+    position: absolute;
+    top: 0px;
+    left: 108px;
+    visibility: hidden;
+}
+#btn2Before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: green 20px solid;
+    border-top: transparent 20px solid;
+    border-left: green 20px solid;
+    border-right: transparent 20px solid;
+    position: absolute;
+    top: 0px;
+    left: 225px;
+    visibility: hidden;
+}
+#btn2After{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: green 20px solid;
+    border-top: transparent 20px solid;
+    border-right: green 20px solid;
+    border-left: transparent 20px solid;
+    position: absolute;
+    top: 0px;
+    left: 72px;
+    visibility: hidden;
+}
+#btn3Before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: green 20px solid;
+    border-top: transparent 20px solid;
+    border-left: green 20px solid;
+    border-right: transparent 20px solid;
+    position: absolute;
+    top: 0px;
+    left: 351px;
+    visibility: hidden;
+}
+#btn3After{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: green 20px solid;
+    border-top: transparent 20px solid;
+    border-right: green 20px solid;
+    border-left: transparent 20px solid;
+    position: absolute;
+    top: 0px;
+    left: 190px;
+    visibility: hidden;
+}
+#btnS1, #btnS2, #btnS3{color: cornsilk;} #btnS4, #btnS5{color: burlywood;}
+#btnS1{
+    background-color: #185004;
+}
+#btnS1:hover, #btnS2:hover, #btnS3:hover{
+    color: hotpink;
+    transition: 2s;
+}
+#phyBox{
+    position: absolute;
+    width:100%;
+    height: 90%;
+    background-color: #185004;
+    visibility: hidden;
+}
+#chemBox{
+    position: absolute;
+    width:100%;
+    height: 90%;
+    background-color: #185004;
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#mathBox{
+    position: absolute;
+    width:100%;
+    height: 90%;
+    background-color: #185004;
+    visibility: hidden;
+}
+.c1{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 20, 255, 0.53);
+    position: absolute;
+    left: 97.9%;
+    top: 12.4px;
+    border-radius: 50%;
+    z-index: 102;
+    animation: resize1 1s infinite;
+}
+.c2{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 255, 20, 0.58);
+    position: absolute;
+    left: 97.7%;
+    top: 10.5px;
+    border-radius: 50%;
+    z-index: 101;
+    animation: resize2 1s infinite;
+}
+/*animations*/
+@keyframes resize2{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(5);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(6);
+        opacity:0;
+    }
+}
+@keyframes resize1{
+    0%{
+        transform: scale(3);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(4);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+/* animationEnd */
+.lessons{
+    padding: 0px;
+    margin: 3px;
+    color: cornsilk;
+    text-decoration: none;
+}
+#supportbox{
+    position: absolute;
+    left: 1070px;
+    top: 60px;
+    z-index: 100;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 1px 1px 7px 9px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+}
+.suplink{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: ;
+    color:cadetblue;
+    line-height: 10px;
+    padding: 5px 0px 5px 0px;
+    text-align: left;
+}
+.suptext{
+    font-family: monospace;
+    background-color: red;
+    text-align: center;
+}
+.suptext:hover{
+    color: white;
+    background-color: black;
+}
+#helpbox{
+    position: absolute;
+    left: 1070px;
+    top: 60px;
+    z-index: 100;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 1px 1px 7px 9px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+}
+#content{
+	position: relative;
+	top:0px;
+  height: 1600px;
+  background-color: #fcf1c4;
+	padding: 0px;
+	margin: 0px;
+}
+#footer{
+  background-color: #1b2e3e;
+  width: 100%;
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 118;
+	position: relative;
+	top: 4%;
+  bottom: 0%;
+}
+/* content box start */
+  /* phyCnt start */
+#phyCnt{
+  position: relative;
+  top: 5%;
+  left: 5%;
+  width: 1200px;
+  height: 100%;
+  background-color: rgba(0, 100, 70, 1);
+  box-shadow: 4px 5px 33px -1px #da4444;
+}
+#pages{
+  position: relative;
+  border: transparent;
+  top: 20%;
+  left: 40%;
+  width: 800px;
+  height: 50px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: 100%;
+  grid-gap: 5px;
+}
+#page1, #page2, #page3, #page4, #page5, #page6{
+  background-color: rgba(200, 80, 0, 1);
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  box-shadow: 0px 0px 37px 2px #4960cc;
+}
+.page{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 10%;
+  left: 0%;
+}

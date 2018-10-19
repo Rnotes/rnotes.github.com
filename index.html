@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en-in">
+
+<head>
+  <title> R &#124; Notes </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+
+<body onscroll="pageHeight()" onmousemove="showCoords(event)" onload="loaderHide()">
+
+
+  <div id="loader" class="loader">
+    <div>
+      <p>Please wait .....</p><br />
+      <p><img src="img/loading.gif" alt="loading" title="loading...." /></p>
+    </div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Fahkwang');
+    </style>
+  <div id="header" class="header">
+    <div id="blur_effect_header" class="blur_effect_header"></div>
+    <button id="logo" class="logo">
+      <img src="img/favicon.png" alt="favicon" class="logoimg" /></button>
+    <button class="home" id="home"><a href="#" target="_self"><img src="img/home.png" alt="home" class="homeicon" /><span class="hometext">HOME</span></a></button>
+
+
+    <button id="study" class="study" onclick="showOrHide(boxstudy);"><img src="img/study.png" alt="study" class="studyicon" /><span class="studyext">STUDY</span></button>
+
+    <div class="boxstudy_wrapper" id="boxstudy_wrapper">
+      <div id="boxstudy" class="boxstudy">
+        <div class="blur_Studybox blur_studybox_id" id="blur_studybox_id"></div>
+        <div class="phy_button_holder">
+          <div onclick="phy1BoxShow(phy1Box);" onscroll="boxStudyHide();" id="btnS1" class="btnS1">
+            <div class="btntxt"><span class="t_btntxt">PHYSICS-I</span></div>
+          </div>
+
+
+          <div id="phy1Box" class="phy1Box" style="text-align: center; font-size: 50px; color: floralwhite;">
+            <p>Not Available.....<br />
+              try Physics-II.....</p>
+          </div>
+          <div onclick="phy2BoxShow(phy2Box);" class="btnS2" id="btnS2">
+            <div class="btntxt"><span class="t_btntxt">PHYSICS-II</span></div>
+          </div>
+
+
+          <div id="phy2Box" class="phy2Box">
+            <div class="phy21">
+              <div class="bookNumber1">
+                <div class="headOfPhy1">
+                  <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-I</h1>
+                </div>
+                <div class="nameOfBook1">
+                  <p id="bookName" class="bookName">Statistical Physics and Thermodynamics</p>
+                </div>
+              </div>
+              <div class="lessons1">
+
+
+              </div>
+            </div>
+            <div class="phy22">
+              <div class="bookNumber2">
+                <div class="headOfPhy2">
+                  <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-II</h1>
+                </div>
+                <div class="nameOfBook2">
+                  <p class="bookName" id="bookName">Waves, Acoustics and Kinetic theory of Gases</p>
+                </div>
+              </div>
+              <div class="lessons2">
+                <ol>
+                  <li><a href="http://www.google.com" class="lessons">Themodinamic</a></li>
+                  <li><a href="http://www.facebook.com" class="lessons">Black body and blackbody radiation</a></li>
+                  <li><a href="http://www.twitter.com" class="lessons">Interruption</a></li>
+                  <li><a href="http://www.youtube.com" class="lessons"></a></li>
+                  <li><a href="#" class="lessons"></a></li>
+                </ol>
+              </div>
+            </div>
+            <div class="phy23">
+              <div class="headOfPhy3">
+                <div class="bookNumber3">
+                  <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-III</h1>
+                </div>
+                <div class="nameOfBook3">
+
+                  <p id="bookName" class="bookName">Optics</p>
+                </div>
+              </div>
+              <div class="lessons3">
+
+              </div>
+            </div>
+
+          </div>
+          <div onclick="phy3BoxShow(phy3Box);" id="btnS3" class="btnS3">
+            <div class="btntxt"><span class="t_btntxt">PHYSICS-III</span></div>
+          </div>
+
+
+          <div id="phy3Box" class="phy3Box" style="text-align: center; font-size: 50px; color: floralwhite;">
+            <p>Not Available.....<br />
+              try Physics-II.....</p>
+          </div>
+          <div onclick="" id="btnS4" class="btnS4" disabled>---</div>
+          <div onclick="" id="btnS5" class="btnS5" disabled>---</div>
+          <div onclick="boxStudyHide()" id="StdClose" class="StdClose">x</div>
+          <div class="close_btn_animation_1"></div>
+          <div class="close_btn_animation_2"></div>
+        </div>
+      </div>
+    </div>
+    <button id="more" class="more"><img src="img/more.png" alt="more" class="moreicon" /><span class="moretxt">MORE</span></button>
+    <div id="search_Box" class="search_Box">
+      <script>
+        (function() {
+          var cx = '015071179236203226112:s24mjnqrnpg';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+
+    </div>
+
+    <div id="search_button" class="search_button" onclick="show_search_box();" style="z-index: 102;">
+
+      <svg width="41" height="33" viewBox="0 0 13 13">
+        <title>search</title>
+        <path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path>
+      </svg>
+
+    </div>
+
+    <button title="support" onclick="supShow(supportbox)" id="support" class="support"><img src="img/support.png" alt="support" class="supporticon" /></button>
+    <div id="supportbox" class="supportbox">
+      <h1 class="suptext">Support</h1>
+      <a href="https://www.facebook.com/ramNotes" target="_blank" class="suplink">
+        <img src="img/fb.png" class="supicon sup1" id="supicon" alt="facebook" />
+        Ramnarayan Chouhan
+      </a>
+      <br /><br /><br />
+
+      <a href="http://mail.google.com" target="_blank" class="suplink">
+        <img src="img/gmail.png" class="supicon sup2" id="supicon" alt="gmail" />
+        ramnarayan942000@gmail.com
+      </a>
+      <br /><br /><br />
+
+      <a href="https://plus.google.com/110534616991774671427" target="_blank" class="suplink">
+        <img src="img/google-plus.png" class="supicon sup3" id="supicon" alt="G+" />
+        Google+
+      </a>
+      <br /><br /><br />
+
+      <a href="#" class="suplink">
+        <img src="img/whatsapp.png" target="_blank" class="supicon sup4" id="supicon" alt="whatsapp" />
+        Whatsapp_address
+      </a>
+      <br /><br /><br />
+
+      <a href="https://www.youtube.com/channel/UCxi0OkWHlmC3jpE_S-8aM4g" target="_blank" class="suplink">
+        <img src="img/youtube.png" class="supicon sup5" id="supicon" alt="YouTUBE" />
+        YouTUBE
+      </a>
+      <br /><br /><br />
+
+
+    </div>
+    <button title="help" onclick="helpShow(helpbox)" id="help" class="help"><img src="img/help.png" alt="help" class="helpicon" /></button>
+    <div id="helpbox" class="helpbox">
+
+
+    </div>
+  </div>
+
+  <div id="container" class="container">
+    <div id="content" class="content">
+
+
+
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="about" id="about">
+
+
+      </div>
+      <div class="notes" id="notes">
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <script type="text/javascript" src="scripts/mainScript.js"></script>
+</body>
+
+</html>
