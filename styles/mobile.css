@@ -71,22 +71,19 @@ height: 100%;
 }
 .logo {
 position: absolute;
-width: 11vw;
-height: 7vh;
+width: 104px;
+height: 98px;
 top: 0px;
-left: 1.5%;
+left: 16px;
 background-color: transparent;
 border: none;
 }
 .home {
 position: relative;
-top: -1vh;
-left: 12%;
+top: -15px;
+left: 120px;
 background-color: transparent;
 border: none;
-font-size: 3vh;
-font-family: Fahkwang;
-color: #ffffff;
 }
 .hometext {
 padding-left: 2px;
@@ -95,26 +92,22 @@ visibility: hidden;
 }
 .study {
 position: absolute;
-top: 1vh;
+top: 6px;
 left: 25%;
 background-color: transparent;
 border: none;
-font-size: 3vh;
-font-family: Fahkwang;
-color: #ffffff;
 }
 .studytext{
 visibility: hidden;
 }
 .studyicon {
-width: 5vh;
+width: 60px;
 position: relative;
-top: -12px;
 }
 .homeicon {
-width: 7vw;
+width: 70px;
 position: relative;
-left: 8%;
+left: 20px;
 top: 14px;
 }
 .more {
@@ -131,11 +124,11 @@ visibility: hidden;
 .help {
 position: relative;
 top: 0px;
-left: 61%;
+left: 680px;
 background-color: transparent;
 border: none;
-width: 7vh;
-height: 6vh;
+width: 40px;
+height: 40px;
 }
 .helpicon {
 width: 57px;
@@ -146,10 +139,10 @@ top: 0px;
 .support {
 position: relative;
 top: -4px;
-left: 62%;
+left: 670px;
 background-color: transparent;
 border: none;
-width: 75px;
+width: 70px;
 }
 .supporticon {
 width: 100%;
@@ -597,7 +590,7 @@ position: relative;
 background-color: #531b4f;
 -webkit-filter: brightness(130%);
 filter: brightness(130%);
-top: 6%;
+top: 70px;
 left: 2.7%;
 width: 95%;
 height: 90%;
@@ -616,9 +609,9 @@ overflow: scroll;
 }
 .search_button {
 position: absolute;
-left: 76%;
-top: -0vh;
-width: 4vh;
+left: 710px;
+top: 0px;
+width: 50px;
 height: auto;
 text-align: center;
 }
