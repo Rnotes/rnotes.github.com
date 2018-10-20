@@ -55,8 +55,7 @@ body {
     width: 100%;
     top: 0px;
     height: 7vh;
-    background-color: #133e03;
-    /*    background: inherit;*/
+    background-color: #27b10b;
     z-index: 120;
     -webkit-transition: 1.5s;
     transition: 1.5s;
@@ -66,17 +65,16 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom: 2px solid rgba(177, 226, 214, 0.93);
 }
-
-.blur_effect_header {
+#logo_back{
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    -webkit-filter: blur(1em) brightness(500%);
-    filter: blur(1em) brightness(500%);
-    z-index: -1;
+    width: 83px;
+    height: 73px;
+    border-radius: 100%;
+    top: 1px;
+    left: 4.8px;
+    background-color: #27b10b;
+    border-bottom: 2px solid rgba(177, 226, 214, 0.93);
+    border-bottom-width: 3px;
 }
 
 .logoimg {
@@ -86,9 +84,10 @@ body {
 
 .logo {
     position: absolute;
-    width: 8vw;
-    height: 135%;
-    left: 0%;
+    width: 7vw;
+    height: 155%;
+    top: 0px;
+    left: -2px;
     background-color: transparent;
     border: none;
 }
@@ -96,7 +95,7 @@ body {
 .home {
     position: relative;
     top: -1vh;
-    left: 12vw;
+    left: 10vw;
     background-color: transparent;
     border: none;
     font-size: 3vh;
@@ -111,7 +110,7 @@ body {
 
 .study {
     position: absolute;
-    top: 1.5vh;
+    top: 1vh;
     left: 20%;
     background-color: transparent;
     border: none;
@@ -121,16 +120,17 @@ body {
 }
 
 .studyicon {
-    width: 3vh;
+    width: 4vh;
+    position: relative;
+    top: 5px;
 }
 
 
 .homeicon {
-    width: 1vw;
-    height: 2.5vh;
+    width: 2vw;
     position: relative;
     left: 0%;
-    top: 0px;
+    top: 5px;
 
 }
 
@@ -143,21 +143,14 @@ body {
     font-size: 3vh;
     font-family: Fahkwang;
     color: #ffffff;
+    visibility: hidden;
 }
 
-.moreicon {
-    width: 2vw;
-    ;
-    height: 1vh;
-    position: relative;
-    left: 3vw;
-    top: -2.5vh;
-}
 
 .help {
     position: relative;
     top: 0.3vh;
-    left: 85.3vw;
+    left: 84vw;
     background-color: transparent;
     border: none;
     width: 7vh;
@@ -165,8 +158,7 @@ body {
 }
 
 .helpicon {
-    width: 100%;
-    height: 100%;
+    width: 2.5vw;
     position: relative;
     left: 0px;
     top: 0px;
@@ -175,7 +167,7 @@ body {
 .support {
     position: relative;
     top: 0.3vh;
-    left: 84.3vw;
+    left: 82.5vw;
     background-color: transparent;
     border: none;
     width: 7vh;
@@ -706,14 +698,14 @@ body .blur_Studybox {
 
 .search_button {
     position: absolute;
-    left: 85vw;
+    left: 85.4vw;
     top: -0vh;
-    width: 6vh;
+    width: 5vh;
     height: auto;
     text-align: center;
 }
 
-.search_button svg {
+.search_image {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -869,7 +861,9 @@ tbody,
     -webkit-transition: 10ms;
     transition: 10ms;
 }
-
+.gsc-search-button-v2{
+        background-image: -webkit-linear-gradient(top,orange,orange) !important;
+}
 .gsc-search-button,
 .gsc-search-button-v2 {
     position: relative;
@@ -922,111 +916,5 @@ tbody svg {
 .gsc-completion-container tbody {
     background-color: white !important;
     color: orange !important;
-
-}
-/* for smallscreen */
-@media screen and (max-width: 361px) {
-
-    #header {
-      width: 100vw;
-      height: 5vh;
-    }
-
-    .logo {
-      top: 20px;
-      width: 100px;
-      height: 80px;
-    }
-
-    .hometext {
-      visibility: hidden;
-    }
-
-    .home {
-      top: -4px;
-    }
-
-    .homeicon {
-      width: 60px;
-    }
-
-    .studyicon {
-      width: 60px;
-    }
-
-    .study {
-      left: 210px;
-      top: 15px;
-    }
-
-    .studyext {
-      visibility: hidden;
-    }
-
-    .moreicon {
-      width: 70px;
-      height: 20px;
-      top: -17px;
-    }
-
-    .moretxt {
-      visibility: hidden;
-    }
-
-    .search_button {
-      top: 0px;
-      left: 70vw;
-      width: 50px;
-      height: 50px;
-    }
-
-    .support {
-      left: 55vw;
-      width: 80px;
-      height: 70px;
-      top: 6px;
-    }
-
-    .supportbox {
-      left: 70vw;
-      width: 280px;
-      height: 400px;
-    }
-
-    .helpbox {
-      left: 70vw;
-      width: 280px;
-      height: 400px;
-    }
-
-    .help {
-      left: 56vw;
-      width: 70px;
-      height: 70px;
-      top: 6px;
-    }
-
-    .boxstudy_wrapper {
-      left: 100px;
-    }
-
-    #gs_cb50 {
-      left: 257px;
-      top: -70px;
-    }
-
-    #gs_id50 #gs_tti50 input {
-      height: 27px !important;
-      font-size: 14px;
-    }
-    #gs_tti50 input:selection .gsc-search-button{
-      top: -60px !important;
-    }
-
-    .gsc-search-button,
-    .gsc-search-button-v2 {
-      top: -9px;
-      left: -14px;
-    }
 
 }
