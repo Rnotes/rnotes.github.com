@@ -797,8 +797,6 @@ body .blur_Studybox {
     font-size: 2vh;
     font-style: italic;
     color: #4a3e37 !important;
-    -webkit-transition: 3s;
-    transition: 3s;
 }
 
 #gs_st50,

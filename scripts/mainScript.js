@@ -9,8 +9,8 @@ window.addEventListener('load', function() {
         search_button1.style.top = '-20px !important';
         search_button2.style.top = '-20px !important';
     } else {
-        search_button1.style.top = "-36.5px !important";
-        search_button2.style.top = "-36.5px !important";
+        search_button1.style.top = "-28px";
+        search_button2.style.top = "-28px";
     }
 });
 

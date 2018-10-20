@@ -603,7 +603,7 @@ width: 41.3vw;
 height: 600px;
 position: absolute;
 display: none;
-top: 7vh;
+top: 100px;
 left: 50vw;
 overflow: scroll;
 }
@@ -734,8 +734,8 @@ background: transparent !important;
 }
 #gs_cb50 {
 position: relative;
-left: 280px;
-top: -83px;
+left: 340px;
+top: -87px;
 background-color: transparent;
 border-radius: 100%;
 width: 1.7vw;
