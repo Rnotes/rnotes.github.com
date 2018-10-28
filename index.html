@@ -1,213 +1,307 @@
 <!doctype html>
 <html lang="en-in">
-
-<head>
-  <title> R &#124; Notes </title>
-  <meta charset="utf-8">
-  <link id="sheet" rel="stylesheet" type="text/css" href="styles/main.css">
-  <link rel="icon" href="img/favicon.png">
-</head>
-
-<body onscroll="pageHeight()" onmousemove="showCoords(event)" onload="loaderHide(); swapSheet();" onresize="swapSheet()">
-
-
-  <div id="loader" class="loader">
-    <div>
-      <p>Please wait .....</p><br />
-      <p><img src="img/loading.gif" alt="loading" title="loading...." /></p>
+  <head>
+    <title> R &#124; Notes </title>
+    <meta charset="utf-8">
+    <link id="sheet" rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body onload="loaderHide(); swapSheet();" onresize="swapSheet()">
+    <div id="loader" class="loader">
+      <div>
+        <p>Please wait .....</p><br />
+        <p><img src="img/loading.gif" alt="loading" title="loading...." /></p>
+      </div>
     </div>
-  </div>
-
-  <style>
+    <style>/*fonts*/
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+    @import url('https://fonts.googleapis.com/css?family=Lobster');
+    @import url('https://fonts.googleapis.com/css?family=Pacifico');
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+    @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+    @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Monoton');
+    @import url('https://fonts.googleapis.com/css?family=Lemonada:400,600&subset=vietnamese');
     @import url('https://fonts.googleapis.com/css?family=Fahkwang');
+    @import url('https://fonts.googleapis.com/css?family=Acme');
+    /*end*/
     </style>
-  <div id="header" class="header">
-    <div id="logo_back" class="blur_effect_header"></div>
-    <button id="logo" class="logo" title="R-Notes">
-      <a href="https://rnotes.github.io" target="_self">
-      <img src="img/favicon.png" alt="favicon" class="logoimg" />
+    <!-- header here -->
+    <div id="header" class="header">
+      <div id="logo_back" class="blur_effect_header"></div>
+      <div id="logo" class="logo" title="R-Notes">
+        <a href="https://rnotes.github.io" target="_self" style="cursor: default;">
+          <img src="img/favicon.png" alt="favicon" class="logoimg" />
+        </a>
+      </div>
+      <div class="siteName" id="siteName"><a href="http://rnotes.github.io" target="_self" style="cursor: default;" /><span class="s_N_a">R</span><span class="s_N_b">Notes</span></a></div>
+      <div class="home" id="home" title="Home"><a href="#" onclick="document.getElementById('c_hdr').src = 'c_cont.html';" target="_self"><img src="img/home.ico" alt="home" class="homeicon" /><span class="hometext">HOME</span></a></div>
+      <div id="study" class="study"><img src="img/study.ico" alt="study" class="studyicon" /><span class="studytext">STUDY</span></div>
+      <div class="boxstudy_wrapper" id="boxstudy_wrapper">
+        <div class="phy_button_holder"></div>
+        <div onclick="phy1BoxShow(phy1Box);" onscroll="boxStudyHide();" id="btnS1" class="btnS1">
+          <div class="btntxt"><span class="t_btntxt">PHYSICS-I</span></div>
+        </div>
+        <div id="phy1Box" class="phy1Box" style="text-align: center; font-size: 50px; color: floralwhite;">
+          <p>Not Available.....<br />
+          try Physics-II.....</p>
+        </div>
+        <div onclick="phy2BoxShow(phy2Box);" class="btnS2" id="btnS2">
+          <div class="btntxt"><span class="t_btntxt">PHYSICS-II</span></div>
+        </div>
+        <div id="phy2Box" class="phy2Box">
+          <div class="b_cnt_one" id="b_cnt_one">
+            <ul class="mainUl">
+              <li class="b_name">Book - I</li>
+              <ul class="l_nm">
+                <li class="lsn_list">lesson1</li>
+                <div class="t_l_cnt_I">
+                  <ul class="tpc_list tpc_list_1">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" onclick="document.getElementById('c_hdr').src = 'c_cont.html';" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson2</li>
+                <div class="t_l_cnt_I">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson3</li>
+                <div class="t_l_cnt_I">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson4</li>
+                <div class="t_l_cnt_I">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson5</li>
+                <div class="t_l_cnt_I">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </ul>
+          </div>
+          <div class="b_cnt_two" id="b_cnt_two">
+            <ul>
+              <li class="b_name">Optics</li>
+              <ul class="ll_nm">
+                <li class="lsn_list">lesson1</li>
+                <div class="t_l_cnt_II">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson2</li>
+                <div class="t_l_cnt_II">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson3</li>
+                <div class="t_l_cnt_II">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson4</li>
+                <div class="t_l_cnt_II">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson5</li>
+                <div class="t_l_cnt_II">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </ul>
+            
+          </div>
+          <div class="b_cnt_thr" id="b_cnt_thr">
+            <ul>
+              <li class="b_name">Book - III</li>
+              <ul class="lll_nm">
+                <li class="lsn_list">lesson1</li>
+                <div class="t_l_cnt_III">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson2</li>
+                <div class="t_l_cnt_III">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson3</li>
+                <div class="t_l_cnt_III">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson4</li>
+                <div class="t_l_cnt_III">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+                <li class="lsn_list">lesson5</li>
+                <div class="t_l_cnt_III">
+                  <ul class="tpc_list">
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </ul>
+            
+          </div>
+        </div>
+        <div onclick="phy3BoxShow(phy3Box);" id="btnS3" class="btnS3">
+          <div class="btntxt"><span class="t_btntxt">PHYSICS-III</span></div>
+        </div>
+        <div id="phy3Box" class="phy3Box" style="text-align: center; font-size: 50px; color: floralwhite;">
+          <p>Not Available.....<br />
+          try Physics-II.....</p>
+        </div>
+        <div onclick="" id="btnS4" class="btnS4" disabled>---</div>
+        <div onclick="" id="btnS5" class="btnS5" disabled>---</div>
+        <div id="StdClose" class="StdClose">x</div>
+        <div class="close_btn_animation_1"></div>
+        <div class="close_btn_animation_2"></div>
+      </div>
+      <div id="more" class="more"><span class="moretxt">MORE</span></div>
+      
+      <div title="support" id="support" class="support"><img src="img/support.png" alt="support" class="supporticon" /></div>
+      <div id="supportbox" class="supportbox">
+        <h1 class="suptext">Support</h1>
+        <a href="https://www.facebook.com/ramNotes" target="_blank" class="suplink">
+          <img src="img/fb.png" class="supicon sup1" id="supicon" alt="facebook" />
+          Ramnarayan Chouhan
+        </a>
+        <br /><br /><br />
+        <a href="http://mail.google.com" target="_blank" class="suplink">
+          <img src="img/gmail.png" class="supicon sup2" id="supicon" alt="gmail" />
+          ramnarayan942000@gmail.com
+        </a>
+        <br /><br /><br />
+        <a href="https://plus.google.com/110534616991774671427" target="_blank" class="suplink">
+          <img src="img/google-plus.png" class="supicon sup3" id="supicon" alt="G+" />
+          Google+
+        </a>
+        <br /><br /><br />
+        <a href="#" class="suplink">
+          <img src="img/whatsapp.png" target="_blank" class="supicon sup4" id="supicon" alt="whatsapp" />
+          Whatsapp_address
+        </a>
+        <br /><br /><br />
+        <a href="https://www.youtube.com/channel/UCxi0OkWHlmC3jpE_S-8aM4g" target="_blank" class="suplink">
+          <img src="img/youtube.png" class="supicon sup5" id="supicon" alt="YouTUBE" />
+          YouTUBE
+        </a>
+        <br /><br /><br />
+      </div>
+      <div title="help" id="help" class="help"><img src="img/help.png" alt="help" class="helpicon" /></div>
+      <div id="helpbox" class="helpbox">
+        <p class="q_help" id="q_help">1. How to contribute on the website?</p>
+        <p class="a_help" id="a_help"><label style="color: blue;">Ans.</label> First capture images of your notes with a good quality camera. Give them numbers like &#40;1, 2, 3, ....&#41; and click on contribute then folow the steps.<br>&#40;a&#41; click on the image available in contribute tab.<br>&#40;b&#41; You will be redirected to another page.<br>&#40;c&#41; Then select your images and upload to website.<br>&#40;d&#41;Provide your e-mail and Name.<br>&#40;e&#41; <b>Please send us your image so, we can show it with your Notes</b>&#40;optional&#41;</p>
+        <p class="h_footer">click outside of help tab to close.</p>
+      </div>
+    </div>
+    <!-- contribute tab here -->
+    <div id="cont" class="cont">
+      <div class="c_opener" id="c_opener" title="click to open"><span>Contribute</span></div>
+      <p class="p-f">Contribute us by providing your notes to the website.<br /><span class="k_m">view <a href="#helpbox" style="text-decoration: underline;" onclick="helpShow()">HELP</a> for how to contribute...</span></p>
+      <p class="p-s">click on the image given below</p>
+      <a href="https://driveuploader.com/upload/R9o2jyBF5x/" class="c_l">
+        <img class="c_i" id="c_i" src="img/cont.png">
       </a>
-    </button>
-    <button class="home" id="home" title="Home"><a href="https://rnotes.github.io" target="_self"><img src="img/home.ico" alt="home" class="homeicon" /><span class="hometext">HOME</span></a></button>
-
-
-    <button id="study" class="study" onclick="showOrHide(boxstudy);"><img src="img/study.ico" alt="study" class="studyicon" /><span class="studytext">STUDY</span></button>
-
-    <div class="boxstudy_wrapper" id="boxstudy_wrapper">
-      <div id="boxstudy" class="boxstudy">
-        <div class="blur_Studybox blur_studybox_id" id="blur_studybox_id"></div>
-        <div class="phy_button_holder">
-          <div onclick="phy1BoxShow(phy1Box);" onscroll="boxStudyHide();" id="btnS1" class="btnS1">
-            <div class="btntxt"><span class="t_btntxt">PHYSICS-I</span></div>
+    </div>
+    <!-- contents here  -->
+    <iframe src="c_cont.html" id="c_hdr" class="c_hdr"></iframe>
+    <!-- footer items here -->
+    <div id="footer" class="footer">
+      <div class="topFooter" id="topFooter">
+        <div class="ownerImage" id="ownerImage">
+          <img class="ownimg" id="ownimg" alt="" src="img/ram.jpg" />
+        </div>
+        <div id="ownerDetail" class="ownerDetail">
+          <div class="o_d" id="o_d">
+            <p class="odLable">This website is owned by :</p>
+            <p class="odName">Ramnarayan Chouhan</p>
           </div>
-
-
-          <div id="phy1Box" class="phy1Box" style="text-align: center; font-size: 50px; color: floralwhite;">
-            <p>Not Available.....<br />
-              try Physics-II.....</p>
-          </div>
-          <div onclick="phy2BoxShow(phy2Box);" class="btnS2" id="btnS2">
-            <div class="btntxt"><span class="t_btntxt">PHYSICS-II</span></div>
-          </div>
-
-
-          <div id="phy2Box" class="phy2Box">
-            <div class="phy21">
-              <div class="bookNumber1">
-                <div class="headOfPhy1">
-                  <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-I</h1>
-                </div>
-                <div class="nameOfBook1">
-                  <p id="bookName" class="bookName">Statistical Physics and Thermodynamics</p>
-                </div>
-              </div>
-              <div class="lessons1">
-
-
-              </div>
-            </div>
-            <div class="phy22">
-              <div class="bookNumber2">
-                <div class="headOfPhy2">
-                  <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-II</h1>
-                </div>
-                <div class="nameOfBook2">
-                  <p class="bookName" id="bookName">Waves, Acoustics and Kinetic theory of Gases</p>
-                </div>
-              </div>
-              <div class="lessons2">
-                <ol>
-                  <li><a href="http://www.google.com" class="lessons">Themodinamic</a></li>
-                  <li><a href="http://www.facebook.com" class="lessons">Black body and blackbody radiation</a></li>
-                  <li><a href="http://www.twitter.com" class="lessons">Interruption</a></li>
-                  <li><a href="http://www.youtube.com" class="lessons"></a></li>
-                  <li><a href="#" class="lessons"></a></li>
-                </ol>
-              </div>
-            </div>
-            <div class="phy23">
-              <div class="headOfPhy3">
-                <div class="bookNumber3">
-                  <h1 style="color: white; padding: 0px; margin: 0px 0px 20px 0px;">Book-III</h1>
-                </div>
-                <div class="nameOfBook3">
-
-                  <p id="bookName" class="bookName">Optics</p>
-                </div>
-              </div>
-              <div class="lessons3">
-
-              </div>
-            </div>
-
-          </div>
-          <div onclick="phy3BoxShow(phy3Box);" id="btnS3" class="btnS3">
-            <div class="btntxt"><span class="t_btntxt">PHYSICS-III</span></div>
-          </div>
-
-
-          <div id="phy3Box" class="phy3Box" style="text-align: center; font-size: 50px; color: floralwhite;">
-            <p>Not Available.....<br />
-              try Physics-II.....</p>
-          </div>
-          <div onclick="" id="btnS4" class="btnS4" disabled>---</div>
-          <div onclick="" id="btnS5" class="btnS5" disabled>---</div>
-          <div onclick="boxStudyHide()" id="StdClose" class="StdClose">x</div>
-          <div class="close_btn_animation_1"></div>
-          <div class="close_btn_animation_2"></div>
+        </div>
+        <div class="fooLogoHolder">
+          <img src="img/favicon.png" alt="" class="fooLogo" id="fooLogo" >
+        </div>
+        <div class="social-contact" id="social-contact">
+          <a href="http://www.facebook.com/ramNotes" target="_blank">
+            <img alt="" id="footer_facebook" class="footer_facebook fooContacts" src="img/footer_facebook.png" />
+          </a>
+          <a href="https://plus.google.com/110534616991774671427" target="_blank">
+            <img alt="" id="footer_google" class="footer_google fooContacts" src="img/footer_google.png" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCxi0OkWHlmC3jpE_S-8aM4g" target="_blank">
+            <img alt="" id="footer_youtube" class="footer_youtube fooContacts" src="img/footer_youtube.png" />
+          </a>
+        </div>
+        <div id="decideLater" class="decideLater">
+          
+        </div>
+        <hr>
+      </div>
+      <div class="footerContent_holder" id="footerContent_holder">
+        <div class="about" id="about">
+          <h1>About</h1>
+          <p>This is a non-profitable website designed for learners. This website contains various notes of different subject and provides them to learners.</p>
+        </div>
+        <div class="notes" id="notes">
+          <h1>Notes</h1>
+        </div>
+        <div class="help_footer" id="help_footer">
         </div>
       </div>
     </div>
-    <button id="more" class="more"><span class="moretxt">MORE</span></button>
-    <div id="search_Box" class="search_Box">
-      <script>
-        (function() {
-          var cx = '015071179236203226112:s24mjnqrnpg';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-        })();
-      </script>
-      <gcse:search></gcse:search>
-
-    </div>
-
-    <div id="search_button" class="search_button" onclick="show_search_box();" style="z-index: 102;">
-      <img id="search_image" class="search_image" src="img/search.ico" alt="search" />
-    </div>
-
-    <button title="support" onclick="supShow(supportbox)" id="support" class="support"><img src="img/support.png" alt="support" class="supporticon" /></button>
-    <div id="supportbox" class="supportbox">
-      <h1 class="suptext">Support</h1>
-      <a href="https://www.facebook.com/ramNotes" target="_blank" class="suplink">
-        <img src="img/fb.png" class="supicon sup1" id="supicon" alt="facebook" />
-        Ramnarayan Chouhan
-      </a>
-      <br /><br /><br />
-
-      <a href="http://mail.google.com" target="_blank" class="suplink">
-        <img src="img/gmail.png" class="supicon sup2" id="supicon" alt="gmail" />
-        ramnarayan942000@gmail.com
-      </a>
-      <br /><br /><br />
-
-      <a href="https://plus.google.com/110534616991774671427" target="_blank" class="suplink">
-        <img src="img/google-plus.png" class="supicon sup3" id="supicon" alt="G+" />
-        Google+
-      </a>
-      <br /><br /><br />
-
-      <a href="#" class="suplink">
-        <img src="img/whatsapp.png" target="_blank" class="supicon sup4" id="supicon" alt="whatsapp" />
-        Whatsapp_address
-      </a>
-      <br /><br /><br />
-
-      <a href="https://www.youtube.com/channel/UCxi0OkWHlmC3jpE_S-8aM4g" target="_blank" class="suplink">
-        <img src="img/youtube.png" class="supicon sup5" id="supicon" alt="YouTUBE" />
-        YouTUBE
-      </a>
-      <br /><br /><br />
-
-
-    </div>
-    <button title="help" onclick="helpShow(helpbox)" id="help" class="help"><img src="img/help.png" alt="help" class="helpicon" /></button>
-    <div id="helpbox" class="helpbox">
-
-
-    </div>
-  </div>
-
-  <div id="container" class="container">
-    <div id="content" class="content">
-
-
-
-
-
-    </div>
-
-    <div id="footer" class="footer">
-      <div class="about" id="about">
-
-
-      </div>
-      <div class="notes" id="notes">
-
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-  <script type="text/javascript" src="scripts/mainScript.js"></script>
-  <script type="text/javascript" src="scripts/swapSheet.js"></script>
-</body>
-
+    <!-- all scripts here -->
+    <script type="text/javascript" src="scripts/mainScript.js"></script>
+    <script type="text/javascript" src="scripts/swapSheet.js"></script>
+  </body>
 </html>

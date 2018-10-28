@@ -1,42 +1,21 @@
 //javaScript document for basic effects
-window.addEventListener('load', function() {
-    'use strict';
-    var input = document.getElementById('gsc-i-id1'),
-        search_button1 = document.getElementsByClassName('gsc-search-button'),
-        search_button2 = document.getElementsByClassName('gsc-search-button-v2');
-    input.placeholder = "search here....";
-    if (input.value === "") {
-        search_button1.style.top = '-20px !important';
-        search_button2.style.top = '-20px !important';
-    } else {
-        search_button1.style.top = "-28px";
-        search_button2.style.top = "-28px";
-    }
-});
-
-
 function showOrHide() {
     'use strict';
     var study = document.getElementById('boxstudy_wrapper'),
         phy1_1 = document.getElementById('phy1Box'),
         phy1_2 = document.getElementById('phy2Box'),
-        phy1_3 = document.getElementById('phy3Box'),
-        blur = document.getElementById('blur_studybox_id');
-    if (study.style.height === '0px') {
-        study.style.height = '406px';
+        phy1_3 = document.getElementById('phy3Box');
+    if (study.style.height === '0vh') {
+        study.style.height = '87vh';
         study.style.transition = '2s';
         phy1_1.style.visibility = 'visible';
-        blur.style.height = '100vh';
-        blur.style.transition = '200ms';
         phy1_2.style.visibility = 'hidden';
         phy1_1.style.display = 'block';
         phy1_2.style.display = 'none';
         phy1_3.style.display = 'none';
         phy1_3.style.visibility = 'hidden';
     } else {
-        study.style.height = '0px';
-        blur.style.height = '0vh';
-        blur.style.transition = '6s';
+        study.style.height = '0vh';
         phy1_1.style.visibility = 'hidden';
         phy1_2.style.visibility = 'hidden';
         phy1_3.style.visibility = 'hidden';
@@ -45,24 +24,8 @@ function showOrHide() {
         phy1_3.style.display = 'none';
     }
 }
-
-function boxStudyHide() {
-    'use strict';
-    var studyHide = document.getElementById('boxstudy_wrapper'),
-        phy1_1 = document.getElementById('phy1Box'),
-        phy1_2 = document.getElementById('phy2Box'),
-        phy1_3 = document.getElementById('phy3Box'),
-        blur = document.getElementById('blur_studybox_id');
-    studyHide.style.height = '0px';
-    blur.style.height = '0px';
-    blur.style.transition = '5s';
-    phy1_1.style.visibility = 'hidden';
-    phy1_2.style.visibility = 'hidden';
-    phy1_3.style.visibility = 'hidden';
-    phy1_1.style.display = 'none';
-    phy1_2.style.display = 'none';
-    phy1_3.style.display = 'none';
-}
+document.getElementById('study').onclick = showOrHide;
+document.getElementById('StdClose').onclick = showOrHide;
 //phy1_1
 function phy1BoxShow() {
     'use strict';
@@ -127,7 +90,6 @@ function phy3BoxShow() {
     }
 }
 
-
 function supShow() {
     'use strict';
     var sup = document.getElementById('supportbox');
@@ -136,6 +98,7 @@ function supShow() {
         sup.style.display = 'block';
     }
 }
+document.getElementById('support').onclick = supShow;
 
 function helpShow() {
     'use strict';
@@ -145,7 +108,7 @@ function helpShow() {
         help.style.display = 'block';
     }
 }
-
+document.getElementById('help').onclick = helpShow;
 var supHelpBoxes = ['supportbox', 'helpbox'],
     i;
 window.addEventListener('mousedown', function(c) {
@@ -157,22 +120,16 @@ window.addEventListener('mousedown', function(c) {
         }
     }
 }, true);
-
-//for header..
-
 //javaScript document for Hide effect in header
 function pageHeight() {
     'use strict';
-    var idContainer = ['phy1Box', 'phy2Box', 'phy3Box', 'supportbox', 'helpbox', 'search_Box'],
-        blur = document.getElementById('blur_studybox_id'),
+    var idContainer = ['phy1Box', 'phy2Box', 'phy3Box', 'supportbox', 'helpbox'],
         head = document.getElementById('header'),
         study = document.getElementById('boxstudy_wrapper'),
         i;
     for (i = 0; i < idContainer.length; i++) {
         if (window.pageYOffset > 100) {
             var hidAll = document.getElementById(idContainer[i]);
-            blur.style.height = "0px";
-            blur.style.transition = '0s';
             study.style.height = "0px";
             study.style.transition = '0s';
             head.style.top = '-400px';
@@ -185,6 +142,7 @@ function pageHeight() {
         }
     }
 }
+window.onscroll = pageHeight;
 
 //window.addEventListener('mousemove', function (e) {
 //    'use strict';
@@ -192,43 +150,39 @@ function pageHeight() {
 //});
 function showCoords(event) {
     'use strict';
-    var y = event.clientY;
+    var y = event.clientY,
+        head = document.getElementById('header');
     if (y < 40) {
-        document.getElementById('header').style.top = '0px';
-        document.getElementById('header').style.transform = 'rotateX(0deg)';
+        head.style.top = '0px';
+        head.style.transform = 'rotateX(0deg)';
     }
 }
-
-
-// js for search...
-function show_search_box() {
-    'use strict';
-    var search = document.getElementById('search_Box'),
-        seachClose = document.getElementById('gs_cb50');
-    if (search.style.visibility === 'hidden') {
-        search.style.visibility = 'visible';
-        search.style.display = 'block';
+document.addEventListener('mousemove', showCoords);
+// for contribute...
+function s_c_t() {
+    let o_c_w = document.getElementById('cont');
+    if (o_c_w.style.left === '99%') {
+        o_c_w.style.left = '80%';
+        document.getElementById('c_opener').setAttribute('title', 'click to close');
     } else {
-        search.style.visibility = 'hidden';
-        search.style.display = 'none';
-        seachClose.style.transition = '0s';
+        o_c_w.style.left = '99%';
+        document.getElementById('c_opener').setAttribute('title', 'click to open');
     }
 }
+document.getElementById('c_opener').onclick = s_c_t;
 
 // for preloader...
-function showLoader() {
-    'use strict';
-    var loader = document.getElementById('loader');
-    if (loader.style.visibility === 'hidden') {
-        loader.style.visibility = 'visible';
-    } else {
-        loader.style.visibility = 'hidden';
-    }
-}
-document.getElementsByClassName('gsc-search-button').onload = showLoader;
-
 function loaderHide() {
     'use strict';
     var load = document.getElementById('loader');
     load.style.visibility = 'hidden';
 }
+//for studyItem lists
+function showList1() {
+    if(document.getElementsByName('t_l_cnt_I_1').style.display === 'none') {
+        document.getElementsByName('t_l_cnt_I_1').style.display = 'block';
+    } else {
+                document.getElementsByName('t_l_cnt_I_1').style.display = 'none';
+    }
+}
+document.getElementsByName('lsn_list_1').onclick = showList1;

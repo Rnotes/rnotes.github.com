@@ -1,0 +1,798 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Monoton');
+@import url('https://fonts.googleapis.com/css?family=Lemonada:400,600&subset=vietnamese');
+
+/*end*/
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 50px;
+    -webkit-width: 1px;
+    -moz-width: 1px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar:active {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #31ff00;
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #2caa0d;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../homepageImages/css-pattern-3.png);
+    background-size: 100px;
+    background-color: white;
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    height: 7vh;
+    background-color: #27b10b;
+    z-index: 120;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 2px solid rgba(177, 226, 214, 0.93);
+}
+#logo_back{
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    border-radius: 100%;
+    top: 1px;
+    left: 4.8px;
+    background-color: #27b10b;
+    border-bottom: 2px solid rgba(177, 226, 214, 0.93);
+    border-bottom-width: 3px;
+}
+
+.logoimg {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    width: 76px;
+    top: 0px;
+    left: -2px;
+    background-color: transparent;
+    border: none;
+}
+
+.home {
+    position: relative;
+    top: -1vh;
+    left: 12vw;
+    background-color: transparent;
+    border: none;
+    font-size: 3vh;
+    font-family: Fahkwang;
+    color: #ffffff;
+}
+
+.hometext {
+    position: relative;
+    top: -6px;
+    padding-left: 2px;
+    color: white;
+}
+
+.study {
+    position: absolute;
+    top: 1vh;
+    left: 30%;
+    background-color: transparent;
+    border: none;
+    font-size: 3vh;
+    font-family: Fahkwang;
+    color: #ffffff;
+}
+
+.studyicon {
+    width: 40px;
+    position: relative;
+    top: -4px;
+}
+.studytext{
+    position: relative;
+    top: -18px;
+}
+
+.homeicon {
+    width: 40px;
+    position: relative;
+    left: 0%;
+    top: 5px;
+
+}
+
+.more {
+    position: absolute;
+    top: 1.5vh;
+    left: 28vw;
+    background-color: transparent;
+    border: none;
+    font-size: 3vh;
+    font-family: Fahkwang;
+    color: #ffffff;
+    visibility: hidden;
+}
+
+
+.help {
+    position: relative;
+    top: 0.3vh;
+    left: 65vw;
+    background-color: transparent;
+    border: none;
+    width: 7vh;
+    height: 6vh;
+}
+
+.helpicon {
+    width: 40px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.support {
+    position: relative;
+    top: 0vh;
+    left: 65vw;
+    background-color: transparent;
+    border: none;
+    width: 7vh;
+    height: 6vh;
+}
+
+.supporticon {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.boxstudy_wrapper {
+    position: absolute;
+    top: 7.2vh;
+    left: 10vw;
+    background-color: rgba(54, 115, 112, 0.5294117647058824);
+    width: 623px;
+    height: 0px;
+    border-radius: 9px;
+    -webkit-transition: 2s;
+    transition: 2s;
+    overflow: hidden;
+}
+
+.boxstudy {
+    position: relative;
+    top: 1vh;
+    left: 0.7vw;
+    border: inset 1px;
+    width: 610px;
+    height: 387px;
+    border-radius: 9px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 100;
+    /* background: inherit; */
+    background-image: url(../img/pic7.jpg);
+    -webkit-box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.39);
+    overflow: hidden;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+
+.StdClose {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -4px;
+    left: 97.5%;
+    font-size: 25px;
+    font-family: Fahkwang;
+    color: red;
+    z-index: 103;
+    cursor: pointer;
+}
+
+.btnS1,
+.btnS2,
+.btnS3,
+.btnS4,
+.btnS5 {
+    background-color: green;
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    top: 1px;
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    width: 80px;
+    height: 40px;
+    font-size: 10px;
+    font-family: Montserrat;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 11px 1px rgba(255, 245, 0, 0.46);
+    box-shadow: 1px 1px 11px 1px rgba(255, 245, 0, 0.46);
+    margin: 0px;
+}
+
+.phy_button_holder {
+    position: relative;
+    background-color: green;
+    width: 100%;
+    height: 10%;
+}
+
+.btnS1,
+.btnS2,
+.btnS3 {
+    color: cornsilk;
+}
+
+.btnS4,
+.btnS5 {
+    color: burlywood;
+}
+
+.btnS1 {
+    background-color: #185004;
+}
+
+button:focus {
+    outline: 0px;
+}
+
+.btntxt {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.btntxt:hover {
+    background-color: rgba(95, 212, 201, 0.3);
+    border-radius: 9px;
+    border-width: 1px;
+    border-style: inset;
+    border-color: initial;
+    -o-border-image: initial;
+    border-image: initial;
+}
+
+.t_btntxt {
+    padding-top: 18px;
+    position: relative;
+    top: 30%;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+
+.phy1Box {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+.phy2Box {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+    visibility: hidden;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.bookNumber1,
+.bookNumber2,
+.bookNumber3 {
+    position: relative;
+    top: 7px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 8px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 173, 255, 0.61);
+}
+
+.headOfPhy1,
+.headOfPhy2,
+.headOfPhy3 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+}
+
+.nameOfBook1,
+.nameOfBook2,
+.nameOfBook3 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 47%;
+    text-align: center;
+}
+
+
+.bookName {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    color: grey;
+    background-color: white;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.lessons1 {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    background-color: #ff861e;
+    height: 240px;
+}
+
+.lessons2 {
+    position: relative;
+    top: -16px;
+    left: 0px;
+    width: 100%;
+    background-color: #ff861e;
+    height: 240px;
+}
+
+.lessons3 {
+    position: relative;
+    top: -21px;
+    left: 0px;
+    width: 100%;
+    background-color: #ff861e;
+    height: 240px;
+}
+
+.nameOfBook3 {
+    top: -41px;
+}
+
+.phy2Box li {
+    color: white;
+}
+
+.phy2Box a:hover {
+    text-decoration: underline;
+}
+
+.phy3Box {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+body .blur_Studybox {
+    position: absolute;
+    display: inline-block;
+    left: -300px;
+    top: -200px;
+    width: 100vw;
+    height: 0vh;
+    background: inherit;
+    -webkit-filter: blur(9px);
+    filter: blur(9px);
+    z-index: -1;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.close_btn_animation_1 {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 20, 255, 0.53);
+    position: absolute;
+    left: 97.9%;
+    top: 12.4px;
+    border-radius: 50%;
+    z-index: 102;
+    -webkit-animation: resize1 1s infinite;
+    animation: resize1 1s infinite;
+}
+
+.close_btn_animation_2 {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 255, 20, 0.58);
+    position: absolute;
+    left: 97.7%;
+    top: 10.5px;
+    border-radius: 50%;
+    z-index: 101;
+    -webkit-animation: resize2 1s infinite;
+    animation: resize2 1s infinite;
+}
+
+/*animations*/
+@-webkit-keyframes resize2 {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: scale(5);
+        transform: scale(5);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(6);
+        transform: scale(6);
+        opacity: 0;
+    }
+}
+
+@keyframes resize2 {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: scale(5);
+        transform: scale(5);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(6);
+        transform: scale(6);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes resize1 {
+    0% {
+        -webkit-transform: scale(3);
+        transform: scale(3);
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: scale(4);
+        transform: scale(4);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(5);
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+@keyframes resize1 {
+    0% {
+        -webkit-transform: scale(3);
+        transform: scale(3);
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: scale(4);
+        transform: scale(4);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(5);
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+/* animationEnd */
+.lessons {
+    padding: 0px;
+    margin: 3px;
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.supportbox {
+    position: absolute;
+    left: 61vw;
+    top: 7vh;
+    z-index: 100;
+    width: 260px;
+    height: 60vh;
+    background-color: white;
+    -webkit-box-shadow: 1px 1px 7px 9px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 7px 9px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+}
+
+.suplink {
+    text-decoration: none;
+    font-size: 16px;
+    color: cadetblue;
+    line-height: 10px;
+    padding: 5px 0px 5px 0px;
+    text-align: left;
+}
+
+.suptext {
+    font-family: monospace;
+    background-color: red;
+    text-align: center;
+}
+
+.suptext:hover {
+    color: white;
+    background-color: black;
+}
+
+.supportbox a{
+  position: relative;
+  left: 18px;
+}
+.supportbox a:hover{
+  color: orange;
+}
+
+.supicon{
+  position: relative;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+}
+.sup5{
+  width: 20px;
+  height: 15px;
+}
+.helpbox {
+    position: absolute;
+    left: 61vw;
+    top: 7vh;
+    z-index: 100;
+    width: 260px;
+    height: 60vh;
+    background-color: white;
+    -webkit-box-shadow: 1px 1px 7px 9px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 7px 9px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+}
+
+/* laoding... zone... */
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 120%;
+    z-index: 130;
+}
+
+.loader div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 121;
+}
+
+.loader p {
+    color: #04c6a1;
+    z-index: 121;
+    font-size: 30px;
+}
+
+.loader div img {
+    width: 100px;
+    position: relative;
+    left: 50%;
+    padding-top: 50px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* container_stylesheet.... */
+.container {
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    top: 50px;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    background-color: #531b4f;
+    -webkit-filter: brightness(130%);
+    filter: brightness(130%);
+    left: 2.7%;
+    width: 95%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* footer content */
+
+
+.footer {
+    background-color: #1b2e3e;
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 101;
+    position: relative;
+    top: 10%;
+    display: grid;
+    grid-template-rows: 200px 400px;
+    grid-template-columns: 100%; 
+}
+.topFooter{
+    width: 100%;
+    position: relative;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 15% 25% 30% 30%;
+    grid-template-rows: 100%;
+}
+.fooLogo{
+    width: 170px;
+    position: relative;
+    top: 10%;
+    left: 0%;
+    transform: rotate(0deg);
+    animation: rotate_logo 2s infinite linear;
+}
+@keyframes rotate_logo {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.decideLater{
+    visibility: hidden;
+}
+.footerContent_holder{
+    position: relative;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+.about{
+    font-family: Sawarabi Mincho;
+    text-align: center;
+}
+.about h1{
+    color: white;
+}
+.about p{
+    width: 150px;
+    position: relative;
+    left: 16%;
+    color: #656b6a;
+}
+.ownimg{
+    width: 80px;
+    position: relative;
+    left: 10px;
+    top: 50px;
+}
+.odLable{
+    position: relative;
+    color: gray;
+    top: 40px;
+    font-size: 10px;
+    font-family: Pacifico;
+
+}
+.odName{
+    position: relative;
+    color: orange;
+    top: 10%;
+    font-size: 20px;
+    font-family: 'Lemonada';
+    line-height: 23px;
+}
+.notes{
+    text-align: center;
+    font-family: Sawarabi Mincho;
+}
+.notes h1{
+    color: white;
+}
+.footer_facebook{
+    position: relative;
+    left: 20px;
+    top: 41px;
+    width: 60px;
+}
+.footer_google{
+    position: relative;
+    left: 40px;
+    top: 41px;
+    width: 60px;
+}
+.footer_youtube{
+    position: relative;
+    left: -67px;
+    top: 121px;
+    width: 60px;
+}
+.footer hr{
+    position: relative;
+    left: 0%;
+    width: 500px;
+    height: 0px;
+}
