@@ -647,6 +647,7 @@ color: #11cac2;
 .cont .p-f .k_m{
 position: relative;
 left: 0px;
+bottom: 11px;
 font-size: 10px;
 text-align: left;
 font-family: monospace;
@@ -654,7 +655,7 @@ color: blue;
 }
 .cont .p-s{
 position: relative;
-top: 38px;
+top: 50px;
 left: 2px;
 text-decoration: underline;
 color: green;
