@@ -1,0 +1,92 @@
+body{
+    background-image: url(nice.jpg);
+    background-size: cover;
+}
+.guessSubmit{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 220px;
+    height: 60px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: orange;
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+}
+.guessSubmit:hover{
+    background-color: orange;
+    color: green;
+}
+.guessField{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90px;
+    height: 60px;
+    background-color: transparent;
+    border: white 2px solid;
+    border-radius: 6px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+}
+.h1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+}
+.guessField:hover{
+    border: 2px solid rgba(225, 225, 225, 0.5);
+}
+.result{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 50px;
+    font-family: serif;
+    color: cornsilk;
+    margin: 0px;
+}
+.guesses{
+    position: absolute;
+    text-align: center;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 30px;
+    color: cyan;
+}
+.lastResult{
+    position: absolute;
+    text-align: center;
+    top: 82%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 30px;
+    border-radius: 4px;
+}
+.lowOrHi{
+    position: absolute;
+    text-align: center;
+    top: 89%;
+    left: 50%;
+    color: yellow;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 30px;
+}

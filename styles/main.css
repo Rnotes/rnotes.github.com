@@ -37,7 +37,7 @@ left: 0px;
 width: 100%;
 top: 0px;
 height: 7vh;
-background-color: #27b10b;
+background-color: #5e4674;
 z-index: 120;
 -webkit-transition: 1.5s;
 transition: 1.5s;
@@ -181,10 +181,9 @@ top: 7.2vh;
 left: 7vw;
 background-color: rgba(54, 115, 112, 0.5294117647058824);
 width: 1241px;
-height: 0vh;
+display: none;
+height: 87vh;
 border-radius: 9px;
--webkit-transition: 2s;
-transition: 2s;
 overflow: hidden;
 }
 .StdClose {
@@ -264,7 +263,7 @@ position: absolute;
 top: 60px;
 width: 100%;
 height: 90%;
-background-color: transparent;
+background-color: #156d96;
 visibility: hidden;
 }
 .phy2Box {
@@ -272,7 +271,7 @@ position: absolute;
 top: 60px;
 width: 100%;
 height: 100%;
-background-color: transparent;
+background-color: #156d96
 visibility: visible;
 }
 /* phy2 content */
@@ -394,7 +393,7 @@ position: absolute;
 top: 60px;
 width: 100%;
 height: 90%;
-background-color: transparent;
+background-color: #156d96;
 visibility: hidden;
 }
 .close_btn_animation_1 {
@@ -493,10 +492,10 @@ opacity: 0;
 /* animationEnd */
 .supportbox {
 position: absolute;
-left: 78vw;
+left: 77vw;
 top: 7vh;
 z-index: 100;
-width: 22vw;
+width: 23vw;
 height: 60vh;
 background-color: white;
 -webkit-box-shadow: 1px 1px 7px 9px rgba(0, 0, 0, 0.2);
@@ -540,7 +539,7 @@ height: 15px;
 .helpbox {
 position: absolute;
 left: 68vw;
-top: 7vh;
+top: 7.4vh;
 z-index: 100;
 width: 31vw;
 height: 60vh;
@@ -551,14 +550,21 @@ box-shadow: 1px 1px 7px 9px rgba(0, 0, 0, 0.2);
 visibility: hidden;
 }
 .helpbox .q_help{
-font-size: 20px;
-color: red;
-background-color: gray;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    background-color: #F0F0F0;
+    height: 40px;
+    border-radius: 9px;
 }
 .helpbox .a_help{
-font-size: 20px;
-color: green;
-background-color: rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    color: black;
+    font-family: monospace;
+    position: relative;
+    background-color: #E5E3E3;
+    bottom: 20px;
+    border-radius: 10px;
 }
 .helpbox .h_footer{
 	position: relative;
@@ -572,28 +578,23 @@ background-color: rgba(0, 0, 0, 0.2);
 position: fixed;
 top: 50%;
 left: 50%;
-background-color: white;
+background-color: #5e4674;
 -webkit-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 width: 100%;
 height: 120%;
 z-index: 130;
 }
-.loader div {
+.loader .loaderHolder {
 position: absolute;
-top: 40%;
+top: 60%;
 left: 50%;
 -webkit-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 z-index: 121;
 }
-.loader p {
-color: #04c6a1;
-z-index: 121;
-font-size: 30px;
-}
 .loader div img {
-width: 100px;
+width: 400px;
 position: relative;
 left: 50%;
 padding-top: 50px;
@@ -619,13 +620,18 @@ width: 260px;
 height: 257px;
 top: 50%;
 z-index: 125;
-left: 99%;
 box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.3);
 border-top-right-radius: 10%;
 border-top-left-radius: 0%;
 border-bottom-left-radius: 10%;
 border-bottom-right-radius: 10%;
 transition: 1s;
+}
+.c_l_b{
+    left: 99%;
+}
+.c_l_a{
+    left: 72%;
 }
 .cont .p-f{
 position: absolute;
@@ -691,60 +697,32 @@ margin: 0px;
 z-index: 101;
 position: relative;
 top: 39px;
-display: grid;
-grid-template-rows: 200px 400px;
-grid-template-columns: 100%;
 }
 .topFooter{
 width: 100%;
 position: relative;
 left: 0%;
-display: grid;
-grid-template-columns: 20% 20% 20% 20% 20%;
-grid-template-rows: 100%;
+height: 250px;
 }
-.fooLogo{
-width: 200px;
-height: 200px;
-position: relative;
-top: 0px;
-left: 15%;
-transform: rotate(0deg);
-animation: rotate_logo 2s infinite linear;
-}
-@keyframes rotate_logo {
-0%{
-transform: rotateY(0deg);
-}
-100%{
-transform: rotateY(360deg);
-}
-}
-.footerContent_holder{
-position: relative;
-top: 0px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr;
-}
-.about{
-font-family: Sawarabi Mincho;
-text-align: center;
-}
-.about h1{
-color: white;
-}
-.about p{
-width: 150px;
-position: relative;
-left: 150px;
-color: #656b6a;
+.ownerImage{
+	position: relative;
+	left: 0px;
+	width: 20%;
+	height: 100%;
+	float: left;
 }
 .ownimg{
 width: 100px;
 position: relative;
 left: 147px;
 top: 50px;
+}
+.ownerDetail{
+	position: relative;
+	left: 0px;
+	float: left;
+	width: 20%;
+	height: 100%;
 }
 .o_d{
 position: relative;
@@ -764,9 +742,70 @@ font-size: 36px;
 font-family: 'Lemonada';
 line-height: 43px;
 }
-.notes{
-text-align: center;
+.fooLogo{
+width: 20%;
+height: 100%;
+position: relative;
+top: 0px;
+left: 0px;
+float: left;
+transform: rotate(0deg);
+animation: rotate_logo 2s infinite linear;
+}
+@keyframes rotate_logo {
+0%{
+transform: rotateY(0deg);
+}
+100%{
+transform: rotateY(360deg);
+}
+}
+.decideLater{
+	position: relative;
+	left: 0px;
+	float: left;
+	width: 20%;
+}
+.footerContent_holder{
+position: relative;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 350px;
+}
+.about{
 font-family: Sawarabi Mincho;
+position: relative;
+left: 0px;
+width: 33.33%;
+height: 100%;
+}
+.a_c_h{
+    position: relative;
+    left: 104px;
+    top: 24px;
+    width: 202px;
+    height: 260px;
+}
+.about h1{
+color: white;
+text-align: center;
+}
+.about p{
+width: 150px;
+position: relative;
+left: 29px;
+text-align: center;
+color: #656b6a;
+}
+.notes{
+font-family: Sawarabi Mincho;
+text-align: center;
+position: relative;
+left: 33.33%;
+bottom: 372px;
+width: 33.33%;
+height: 100%;
 }
 .notes h1{
 color: white;
@@ -791,7 +830,16 @@ width: 60px;
 }
 .footer hr{
 position: relative;
-left: 321px;
+left: 0px;
 width: 700px;
 height: 0px;
+}
+.help_footer{
+font-family: Sawarabi Mincho;
+text-align: center;
+position: relative;
+left: 66.66%;
+bottom: 722px;
+width: 33.33%;
+height: 100%;
 }

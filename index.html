@@ -7,10 +7,10 @@
     <link rel="icon" href="img/favicon.png">
   </head>
   <body onload="loaderHide(); swapSheet();" onresize="swapSheet()">
+
     <div id="loader" class="loader">
-      <div>
-        <p>Please wait .....</p><br />
-        <p><img src="img/loading.gif" alt="loading" title="loading...." /></p>
+      <div class="loaderHolder">
+        <p><img src="img/loading2.gif" alt="loading" title="loading...." /></p>
       </div>
     </div>
     <style>/*fonts*/
@@ -18,7 +18,6 @@
     @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
     @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
     @import url('https://fonts.googleapis.com/css?family=Lobster');
-    @import url('https://fonts.googleapis.com/css?family=Pacifico');
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
     @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
     @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Monoton');
@@ -60,13 +59,13 @@
                   <ul class="tpc_list tpc_list_1">
                     <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
                     <li class="tpcs"><a href="#" onclick="document.getElementById('c_hdr').src = 'c_cont.html';" class="tpclink">topic</a></li>
-                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" onclick="document.getElementById('c_hdr').src = 'c_cont.html#div3';" class="tpclink">topic</a></li>
                   </ul>
                 </div>
                 <li class="lsn_list">lesson2</li>
                 <div class="t_l_cnt_I">
                   <ul class="tpc_list">
-                    <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
+                    <li class="tpcs"><a href="#" onclick="document.getElementById('c_hdr').src = 'game/index.html';" class="tpclink">topic</a></li>
                     <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
                     <li class="tpcs"><a href="#" class="tpclink">topic</a></li>
                   </ul>
@@ -241,13 +240,14 @@
       </div>
       <div title="help" id="help" class="help"><img src="img/help.png" alt="help" class="helpicon" /></div>
       <div id="helpbox" class="helpbox">
-        <p class="q_help" id="q_help">1. How to contribute on the website?</p>
-        <p class="a_help" id="a_help"><label style="color: blue;">Ans.</label> First capture images of your notes with a good quality camera. Give them numbers like &#40;1, 2, 3, ....&#41; and click on contribute then folow the steps.<br>&#40;a&#41; click on the image available in contribute tab.<br>&#40;b&#41; You will be redirected to another page.<br>&#40;c&#41; Then select your images and upload to website.<br>&#40;d&#41;Provide your e-mail and Name.<br>&#40;e&#41; <b>Please send us your image so, we can show it with your Notes</b>&#40;optional&#41;</p>
+        <p class="q_help" id="q_help">How to contribute on the website?</p>
+        <p class="a_help" id="a_help">First capture images of your notes with a good quality camera. Give them numbers like &#40;1, 2, 3, ....&#41; and click on contribute then folow the steps.<br>&#40;a&#41; click on the image available in contribute tab.<br>&#40;b&#41; You will be redirected to another page.<br>&#40;c&#41; Then select your images and upload to website.<br>&#40;d&#41;Provide your e-mail and Name.<br>&#40;e&#41; <b>Please send us your image so, we can show it with your Notes</b>&#40;optional&#41;</p>
         <p class="h_footer">click outside of help tab to close.</p>
       </div>
     </div>
+
     <!-- contribute tab here -->
-    <div id="cont" class="cont">
+    <div id="cont" class="cont c_l_b">
       <div class="c_opener" id="c_opener" title="click to open"><span>Contribute</span></div>
       <p class="p-f">Contribute us by providing your notes to the website.<br /><span class="k_m">view <a href="#helpbox" style="text-decoration: underline;" onclick="helpShow()">HELP</a> for how to contribute...</span></p>
       <p class="p-s">click on the image given below</p>
@@ -290,18 +290,21 @@
       </div>
       <div class="footerContent_holder" id="footerContent_holder">
         <div class="about" id="about">
+          <div class="a_c_h">
           <h1>About</h1>
           <p>This is a non-profitable website designed for learners. This website contains various notes of different subject and provides them to learners.</p>
         </div>
+        </div>
         <div class="notes" id="notes">
-          <h1>Notes</h1>
+          <h1 style="position: relative; top: 24px;">Notes</h1>
         </div>
         <div class="help_footer" id="help_footer">
         </div>
       </div>
     </div>
+
     <!-- all scripts here -->
-    <script type="text/javascript" src="scripts/mainScript.js"></script>
+    <script id="js" type="text/javascript" src="scripts/mainScript.js"></script>
     <script type="text/javascript" src="scripts/swapSheet.js"></script>
   </body>
 </html>

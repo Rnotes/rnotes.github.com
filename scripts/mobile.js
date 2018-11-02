@@ -5,8 +5,9 @@ function showOrHide() {
         phy1_1 = document.getElementById('phy1Box'),
         phy1_2 = document.getElementById('phy2Box'),
         phy1_3 = document.getElementById('phy3Box');
-    if (study.style.display === 'none') {
-        study.style.display = 'block';
+    if (study.style.height === '0vh') {
+        study.style.height = '600px';
+        study.style.transition = '2s';
         phy1_1.style.visibility = 'visible';
         phy1_2.style.visibility = 'hidden';
         phy1_1.style.display = 'block';
@@ -14,7 +15,7 @@ function showOrHide() {
         phy1_3.style.display = 'none';
         phy1_3.style.visibility = 'hidden';
     } else {
-        study.style.display = 'none';
+        study.style.height = '0vh';
         phy1_1.style.visibility = 'hidden';
         phy1_2.style.visibility = 'hidden';
         phy1_3.style.visibility = 'hidden';
@@ -122,16 +123,18 @@ window.addEventListener('mousedown', function(c) {
 //javaScript document for Hide effect in header
 function pageHeight() {
     'use strict';
-    var idContainer = ['phy1Box', 'phy2Box', 'phy3Box', 'supportbox', 'helpbox', 'boxstudy_wrapper'],
+    var idContainer = ['phy1Box', 'phy2Box', 'phy3Box', 'supportbox', 'helpbox'],
         head = document.getElementById('header'),
         study = document.getElementById('boxstudy_wrapper'),
         i;
     for (i = 0; i < idContainer.length; i++) {
         if (window.pageYOffset > 100) {
             var hidAll = document.getElementById(idContainer[i]);
-            study.style.display = "none";
+            study.style.height = "0px";
+            study.style.transition = '0s';
             head.style.top = '-400px';
             head.style.transform = 'rotateX(130deg)';
+            hidAll.style.visibility = 'hidden';
             hidAll.style.display = 'none';
         } else {
             head.style.top = '0px';
@@ -158,13 +161,11 @@ document.addEventListener('mousemove', showCoords);
 // for contribute...
 function s_c_t() {
     let o_c_w = document.getElementById('cont');
-        if (o_c_w.classList.contains('c_l_b') === true) {
-        o_c_w.classList.remove('c_l_b');
-        o_c_w.classList.add('c_l_a');
+    if (o_c_w.style.left === '99%') {
+        o_c_w.style.left = '80%';
         document.getElementById('c_opener').setAttribute('title', 'click to close');
-    } else if(o_c_w.classList.contains('c_l_a') === true) {
-        o_c_w.classList.remove('c_l_a');
-        o_c_w.classList.add('c_l_b');
+    } else {
+        o_c_w.style.left = '99%';
         document.getElementById('c_opener').setAttribute('title', 'click to open');
     }
 }
@@ -177,3 +178,11 @@ function loaderHide() {
     load.style.visibility = 'hidden';
 }
 //for studyItem lists
+function showList1() {
+    if(document.getElementsByName('t_l_cnt_I_1').style.display === 'none') {
+        document.getElementsByName('t_l_cnt_I_1').style.display = 'block';
+    } else {
+                document.getElementsByName('t_l_cnt_I_1').style.display = 'none';
+    }
+}
+document.getElementsByName('lsn_list_1').onclick = showList1;
