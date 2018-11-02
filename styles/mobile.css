@@ -77,8 +77,8 @@ width: 100px;
 margin: 0px;
 height: 50px; 
 position: absolute;
-top: 1vh;
-left: 17vw;
+top: 7px;
+left: 225px;
 background-color: transparent;
 border: none;
 font-size: 3vh;
@@ -110,8 +110,6 @@ position: relative;
 .homeicon {
 width: 70px;
 position: relative;
-left: 84%;
-bottom: 7px;
 }
 .hometext{
     display: none;
