@@ -31,3 +31,5 @@ function swapSheet(ev) {
     }
 
 }
+window.onload = swapSheet;
+window.onscroll = swapSheet;
