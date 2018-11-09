@@ -19,15 +19,15 @@ function swapSheet(ev) {
         document.getElementById('sheet').setAttribute('href', sheetName);
     }
     if (screen.width < 450 || window.innerWidth < 450) {
-        swap('styles/mob.css');
+        swap('mob.css');
     } else if (screen.width < 600 || window.innerWidth < 600) {
-        swap('styles/mob.css');
+        swap('mob.css');
 
     } else if (screen.width < 900 || window.innerWidth < 900) {
-        swap('styles/mob.css');
+        swap('mob.css');
 
     } else {
-        swap('styles/default.css');
+        swap('default.css');
     }
 
 }
