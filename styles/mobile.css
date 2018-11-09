@@ -607,11 +607,11 @@ transform: translate(-50%, -50%);
 }
 /* iframe container */
 .c_hdr{
-    width: 97%;
+    width: 100%;
     height: 2000px;
     border: none;
     position: relative;
-    left: -16px;
+    left: 0px;
     top: 43px;
     overflow: scroll;
     scroll-behavior: smooth;
@@ -632,7 +632,7 @@ border-bottom-right-radius: 10%;
 transition: 1s;
 }
 .c_l_b{
-    left: 95%;
+    left: 100%;
 }
 .c_l_a{
     left: 66%;
@@ -695,7 +695,7 @@ font-family: fahkwang;
 /* footer content */
 .footer {
 background-color: #1b2e3e;
-width: 100%;
+width: 102%;
 height: 600px;
 padding: 0px;
 margin: 0px;
