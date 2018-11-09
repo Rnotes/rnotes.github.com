@@ -25,13 +25,18 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.f_vis{
+	display: block;
+	width: 100%;
+	height: 768px;
+}
+.f_hid{
+	display: none;
+}
 .f_screen{
 	position: fixed;
-	width: 0px;
-	height: 0px;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 1);
 	opacity: 1;
-	display: none;
 	z-index: 126;
 	overflow-y: scroll;
 	bottom: 0%;

@@ -3,14 +3,14 @@ var f_s = document.getElementById('f_screen'),
     f_i = document.getElementById('f_img');
 
 function fullScreen(imgLocation) {
-    f_s.style.display = 'block';
-    f_s.style.width = (screen.width) + 'px';
-    f_s.style.height = (screen.height) + 'px';
-    f_i.setAttribute('src', imgLocation);
+	document.getElementById('f_screen').classList.add('f_vis');
+	document.getElementById('f_screen').classList.remove('f_hid');
+	f_i.setAttribute('src', imgLocation);
     // document.body.scrollTop = 0;
     // document.documentElement.scrollTop = 0;
 }
 
 function reset() {
-    f_s.style.display = 'none';
+	document.getElementById('f_screen').classList.remove('f_vis');
+	document.getElementById('f_screen').classList.add('f_hid');
 }
