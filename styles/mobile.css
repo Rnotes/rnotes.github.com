@@ -26,10 +26,12 @@ a {
 text-decoration: none;
 }
 body {
-background-image: url(../img/css-pattern-2.png);
-background-size: 200px;
+background-image: url(../img/wall-bg.jpg);
+background-size: 100%;
 background-color: white;
 position: relative;
+overflow-y: scroll;
+overflow-x: hidden;
 }
 .header {
 position: fixed;

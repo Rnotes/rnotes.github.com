@@ -18,6 +18,8 @@ background-color: #2caa0d;
 }
 body{
 	background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .cnt_f{
@@ -79,6 +81,7 @@ img{
     text-align: justify;
     text-indent: 75px;
     float: left;
+    font-family: Rozha One;
     padding-top: 20px;
     padding-left: 10px;
     font-size: 21px;

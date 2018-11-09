@@ -176,4 +176,3 @@ function loaderHide() {
     var load = document.getElementById('loader');
     load.style.visibility = 'hidden';
 }
-//for studyItem lists

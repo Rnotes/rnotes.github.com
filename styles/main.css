@@ -22,21 +22,26 @@ scroll-behavior: smooth;
 ul{
 	list-style-type: none;
 }
+li{
+	cursor: pointer;
+}
 a {
 text-decoration: none;
 }
 body {
-background-image: url(../img/css-pattern-2.png);
-background-size: 200px;
+background: #fff url(../img/wall-bg.jpg) no-repeat center 0px fixed;
+background-size: 100%;
 background-color: white;
 position: relative;
+overflow-y: scroll;
+overflow-x: hidden;
 }
 .header {
 position: fixed;
 left: 0px;
 width: 100%;
 top: 0px;
-height: 7vh;
+height: 8vh;
 background-color: #5e4674;
 z-index: 120;
 -webkit-transition: 1.5s;
@@ -493,7 +498,7 @@ opacity: 0;
 .supportbox {
 position: absolute;
 left: 77vw;
-top: 7vh;
+top: 8.4vh;
 z-index: 100;
 width: 23vw;
 height: 60vh;
@@ -539,7 +544,7 @@ height: 15px;
 .helpbox {
 position: absolute;
 left: 68vw;
-top: 7.4vh;
+top: 8.4vh;
 z-index: 100;
 width: 31vw;
 height: 60vh;
@@ -568,7 +573,7 @@ visibility: hidden;
 }
 .helpbox .h_footer{
 	position: relative;
-	top: 27%;
+	top: 0%;
 	left: 2%;
 	font-size: 10px;
 	color: red;
@@ -603,13 +608,14 @@ transform: translate(-50%, -50%);
 }
 /* iframe container */
 .c_hdr{
-	width: 94vw;
-	height: 2000px;
+	width: 103%;
+	height: 768px;
 	border: none;
 	position: relative;
-	left: 30px;
-	top: 43px;
-	overflow: scroll;
+	left: -15px;
+	top: 0px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 /* contribute */
