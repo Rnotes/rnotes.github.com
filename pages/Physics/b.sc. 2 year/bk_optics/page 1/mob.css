@@ -35,11 +35,8 @@ body{
 }
 .f_screen{
     position: fixed;
-    width: 0px;
-    height: 0px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: black;
     opacity: 1;
-    display: none;
     z-index: 126;
     overflow-y: scroll;
     top: 0px;
@@ -57,8 +54,7 @@ body{
 }
 .f_img{
 	position: relative;
-	width: 920px;
-	left: 17%;
+	left: 1%;
 	top: 10%;
 	padding-top: 49px;
 }
