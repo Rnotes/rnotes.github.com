@@ -181,11 +181,11 @@ left: 0px;
 top: 0px;
 }
 .boxstudy_wrapper {
-position: absolute;
-top: 100%;
-left: 10%;
+position: relative;
+top: 76px;
+left: 0px;
 background-color: rgba(54, 115, 112, 0.5294117647058824);
-width: 877px;
+width: 100%;
 display: none;
 height: 608px;
 border-radius: 9px;
@@ -612,7 +612,7 @@ transform: translate(-50%, -50%);
     border: none;
     position: relative;
     left: 0px;
-    top: 4z3px;
+    top: 43px;
     overflow: scroll;
     scroll-behavior: smooth;
 }

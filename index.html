@@ -37,7 +37,57 @@
       <div class="siteName" id="siteName"><a href="http://rnotes.github.io" target="_self" style="cursor: default;" /><span class="s_N_a">R</span><span class="s_N_b">Notes</span></a></div>
       <div class="home" id="home" title="Home"><a href="#" onclick="document.getElementById('c_hdr').src = 'c_cont.html';" target="_self"><img src="img/home.ico" alt="home" class="homeicon" /><span class="hometext">HOME</span></a></div>
       <div id="study" class="study"><img src="img/study.ico" alt="study" class="studyicon" /><span class="studytext">STUDY</span></div>
-      <div class="boxstudy_wrapper" id="boxstudy_wrapper">
+     
+      <div id="more" class="more"><span class="moretxt">MORE</span></div>
+      
+      <div title="support" id="support" class="support"><img src="img/support.png" alt="support" class="supporticon" /></div>
+      <div id="supportbox" class="supportbox">
+        <h1 class="suptext">Support</h1>
+        <a href="https://www.facebook.com/ramNotes" target="_blank" class="suplink">
+          <img src="img/fb.png" class="supicon sup1" id="supicon" alt="facebook" />
+          Ramnarayan Chouhan
+        </a>
+        <br /><br /><br />
+        <a href="mailto:ramnarayan942000@gmail.com" target="_self" class="suplink">
+          <img src="img/gmail.png" class="supicon sup2" id="supicon" alt="gmail" />
+          ramnarayan942000@gmail.com
+        </a>
+        <br /><br /><br />
+        <a href="https://plus.google.com/110534616991774671427" target="_blank" class="suplink">
+          <img src="img/google-plus.png" class="supicon sup3" id="supicon" alt="G+" />
+          Google+
+        </a>
+        <br /><br /><br />
+        <a href="https://chat.whatsapp.com/LfqBQrxiOwiBGCcTLs68Du" class="suplink">
+          <img src="img/whatsapp.png" target="_blank" class="supicon sup4" id="supicon" alt="whatsapp" />
+          R &#124; Notes
+        </a>
+        <br /><br /><br />
+        <a href="https://www.youtube.com/channel/UCxi0OkWHlmC3jpE_S-8aM4g" target="_blank" class="suplink">
+          <img src="img/youtube.png" class="supicon sup5" id="supicon" alt="YouTUBE" />
+          YouTUBE
+        </a>
+        <br /><br /><br />
+      </div>
+      <div title="help" id="help" class="help"><img src="img/help.png" alt="help" class="helpicon" /></div>
+      <div id="helpbox" class="helpbox">
+        <p class="q_help" id="q_help">How to contribute on the website?</p>
+        <p class="a_help" id="a_help">First capture images of your notes with a good quality camera. Give them numbers like &#40;1, 2, 3, ....&#41; and click on contribute then folow the steps.<br>&#40;a&#41; click on the image available in contribute tab.<br>&#40;b&#41; You will be redirected to another page.<br>&#40;c&#41; Then select your images and upload to website.<br>&#40;d&#41;Provide your e-mail and Name.<br>&#40;e&#41; <b>Please send us your image so, we can show it with your Notes</b>&#40;optional&#41;</p>
+        <p class="h_footer">click outside of help tab to close.</p>
+      </div>
+    </div>
+
+    <!-- contribute tab here -->
+    <div id="cont" class="cont c_l_b">
+      <div class="c_opener" id="c_opener" title="click to open"><span>Contribute</span></div>
+      <p class="p-f">Contribute us by providing your notes to the website.<br /><span class="k_m">view <a href="#helpbox" style="text-decoration: underline;" onclick="helpShow()">HELP</a> for how to contribute...</span></p>
+      <p class="p-s">click on the image given below</p>
+      <a href="https://driveuploader.com/upload/R9o2jyBF5x/" class="c_l">
+        <img class="c_i" id="c_i" src="img/cont.png">
+      </a>
+    </div>
+    <!-- box study here -->
+     <div class="boxstudy_wrapper" id="boxstudy_wrapper">
         <div class="phy_button_holder"></div>
         <div onclick="phy1BoxShow(phy1Box);" onscroll="boxStudyHide();" id="btnS1" class="btnS1">
           <div class="btntxt"><span class="t_btntxt">PHYSICS-I</span></div>
@@ -207,54 +257,6 @@
         <div class="close_btn_animation_1"></div>
         <div class="close_btn_animation_2"></div>
       </div>
-      <div id="more" class="more"><span class="moretxt">MORE</span></div>
-      
-      <div title="support" id="support" class="support"><img src="img/support.png" alt="support" class="supporticon" /></div>
-      <div id="supportbox" class="supportbox">
-        <h1 class="suptext">Support</h1>
-        <a href="https://www.facebook.com/ramNotes" target="_blank" class="suplink">
-          <img src="img/fb.png" class="supicon sup1" id="supicon" alt="facebook" />
-          Ramnarayan Chouhan
-        </a>
-        <br /><br /><br />
-        <a href="mailto:ramnarayan942000@gmail.com" target="_self" class="suplink">
-          <img src="img/gmail.png" class="supicon sup2" id="supicon" alt="gmail" />
-          ramnarayan942000@gmail.com
-        </a>
-        <br /><br /><br />
-        <a href="https://plus.google.com/110534616991774671427" target="_blank" class="suplink">
-          <img src="img/google-plus.png" class="supicon sup3" id="supicon" alt="G+" />
-          Google+
-        </a>
-        <br /><br /><br />
-        <a href="https://chat.whatsapp.com/LfqBQrxiOwiBGCcTLs68Du" class="suplink">
-          <img src="img/whatsapp.png" target="_blank" class="supicon sup4" id="supicon" alt="whatsapp" />
-          R &#124; Notes
-        </a>
-        <br /><br /><br />
-        <a href="https://www.youtube.com/channel/UCxi0OkWHlmC3jpE_S-8aM4g" target="_blank" class="suplink">
-          <img src="img/youtube.png" class="supicon sup5" id="supicon" alt="YouTUBE" />
-          YouTUBE
-        </a>
-        <br /><br /><br />
-      </div>
-      <div title="help" id="help" class="help"><img src="img/help.png" alt="help" class="helpicon" /></div>
-      <div id="helpbox" class="helpbox">
-        <p class="q_help" id="q_help">How to contribute on the website?</p>
-        <p class="a_help" id="a_help">First capture images of your notes with a good quality camera. Give them numbers like &#40;1, 2, 3, ....&#41; and click on contribute then folow the steps.<br>&#40;a&#41; click on the image available in contribute tab.<br>&#40;b&#41; You will be redirected to another page.<br>&#40;c&#41; Then select your images and upload to website.<br>&#40;d&#41;Provide your e-mail and Name.<br>&#40;e&#41; <b>Please send us your image so, we can show it with your Notes</b>&#40;optional&#41;</p>
-        <p class="h_footer">click outside of help tab to close.</p>
-      </div>
-    </div>
-
-    <!-- contribute tab here -->
-    <div id="cont" class="cont c_l_b">
-      <div class="c_opener" id="c_opener" title="click to open"><span>Contribute</span></div>
-      <p class="p-f">Contribute us by providing your notes to the website.<br /><span class="k_m">view <a href="#helpbox" style="text-decoration: underline;" onclick="helpShow()">HELP</a> for how to contribute...</span></p>
-      <p class="p-s">click on the image given below</p>
-      <a href="https://driveuploader.com/upload/R9o2jyBF5x/" class="c_l">
-        <img class="c_i" id="c_i" src="img/cont.png">
-      </a>
-    </div>
     <!-- contents here  -->
     <iframe src="c_cont.html" id="c_hdr" class="c_hdr"></iframe>
     <!-- footer items here -->

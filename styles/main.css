@@ -181,11 +181,11 @@ left: 0px;
 top: 0px;
 }
 .boxstudy_wrapper {
-position: absolute;
+position: relative;
 top: 7.2vh;
-left: 7vw;
+left: 0px;
 background-color: rgba(54, 115, 112, 0.5294117647058824);
-width: 1241px;
+width: 100%;
 display: none;
 height: 87vh;
 border-radius: 9px;
@@ -284,7 +284,7 @@ visibility: visible;
 	position: relative;
 	bottom: 0px;
 	left: 0px;
-	width: 413.7px;
+	width: 454.33px;
 	height: 546px;
 	background-color: #156d96;
 	visibility: visible;
@@ -337,11 +337,11 @@ ul{
 	background-color: #4A8492;
 }
 .b_cnt_two{
-	width: 413.7px;
+	width: 454.33px;
 	height: 546px;
 	position: relative;
 	bottom: 547px;
-	left: 413.7px;
+	left: 454.33px;
 	background-color: #156d96;
 	visibility: visible;
 	overflow: scroll;
@@ -365,11 +365,11 @@ ul{
 	background-color: #4A8492;
 }
 .b_cnt_thr{
-	width: 413.7px;
+	width: 454.33px;
 	height: 546px;
 	position: relative;
 	bottom: 1092px;
-	left: 827px;
+	left: 909px;
 	background-color: #156d96;
 	visibility: visible;
 	overflow: scroll;
@@ -613,7 +613,7 @@ transform: translate(-50%, -50%);
 	border: none;
 	position: relative;
 	left: -15px;
-	top: 0px;
+	top: 50px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
