@@ -25,40 +25,6 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.f_vis{
-	display: block;
-	width: 100%;
-	height: 768px;
-}
-.f_hid{
-	display: none;
-}
-.f_screen{
-	position: fixed;
-	background-color: rgba(0, 0, 0, 1);
-	opacity: 1;
-	z-index: 126;
-	overflow-y: scroll;
-	bottom: 0%;
-}
-#reset{
-    position: fixed;
-    top: 56px;
-    font-size: 30px;
-    left: 95%;
-    background-color: white;
-    border: none;
-    border-radius: 100%;
-    width: 40px;
-}
-.f_img{
-	position: relative;
-	width: 920px;
-	left: 17%;
-	top: 10%;
-	padding-top: 49px;
-}
-/* f_screen window end */
 .i_hdr{
 	overflow: scroll;
 }

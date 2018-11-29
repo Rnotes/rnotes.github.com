@@ -176,3 +176,8 @@ function loaderHide() {
     var load = document.getElementById('loader');
     load.style.visibility = 'hidden';
 }
+//for fullscreen...image
+document.getElementById('resetFsr').addEventListener('click', () => {
+    document.getElementById('f_sr').style.display = 'none';
+    document.body.style.overflowY = 'scroll';
+})
