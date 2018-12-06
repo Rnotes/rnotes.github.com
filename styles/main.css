@@ -45,7 +45,7 @@ body {
 	overflow-x: hidden;
 }
 
-.header {
+div.header {
 	position: fixed;
 	left: 0px;
 	width: 100%;
@@ -62,7 +62,7 @@ body {
 	border-bottom: 2px solid rgba(177, 226, 214, 0.93);
 }
 
-#logo_back {
+div#logo_back {
 	position: absolute;
 	width: 83px;
 	height: 73px;
@@ -74,12 +74,12 @@ body {
 	border-bottom-width: 3px;
 }
 
-.logoimg {
+img.logoimg {
 	width: 100%;
 	height: 100%;
 }
 
-.logo {
+div.logo {
 	position: absolute;
 	width: 85px;
 	height: 76px;
@@ -89,7 +89,7 @@ body {
 	border: none;
 }
 
-.home {
+div.home {
 	padding: 0px;
 	width: 100px;
 	margin: 0px;
@@ -99,17 +99,17 @@ body {
 	left: 17vw;
 	background-color: transparent;
 	border: none;
-	font-size: 3vh;
+	font-size: 1.5em;
 	font-family: Fahkwang;
 	color: #ffffff;
 }
 
-.hometext {
+span.hometext {
 	padding-left: 2px;
 	color: white;
 }
 
-.study {
+div.study {
 	position: absolute;
 	top: 1vh;
 	left: 26%;
@@ -121,20 +121,20 @@ body {
 	cursor: pointer;
 }
 
-.studyicon {
+img.studyicon {
 	width: 4vh;
 	position: relative;
 	top: 5px;
 }
 
-.homeicon {
+img.homeicon {
 	width: 2vw;
 	position: relative;
 	left: 0%;
 	top: 5px;
 }
 
-.more {
+div.more {
 	position: absolute;
 	top: 1.5vh;
 	left: 28vw;
@@ -146,7 +146,7 @@ body {
 	visibility: hidden;
 }
 
-.siteName {
+div.siteName {
 	width: 100px;
 	position: relative;
 	top: 0px;
@@ -155,24 +155,24 @@ body {
 	cursor: default;
 }
 
-.s_N_a {
+span.s_N_a {
 	color: #10eefb;
 	font-size: 36px;
 	font-family: acme;
 	font-kerning: 0px;
 }
 
-.s_N_b {
+span.s_N_b {
 	color: #ff03bb;
 	font-size: 36px;
 	font-family: acme;
 }
 
-.siteName:hover .s_N_b {
+div.siteName:hover span.s_N_b {
 	color: #6b170e;
 }
 
-.help {
+div.help {
 	position: absolute;
 	top: 0.4vh;
 	left: 94vw;
@@ -182,14 +182,14 @@ body {
 	height: 6vh;
 }
 
-.helpicon {
+img.helpicon {
 	width: 2.9vw;
 	position: relative;
 	left: 0px;
 	top: 0px;
 }
 
-.support {
+div.support {
 	position: absolute;
 	top: 0.4vh;
 	left: 87.5vw;
@@ -199,7 +199,7 @@ body {
 	height: 6vh;
 }
 
-.supporticon {
+img.supporticon {
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -207,7 +207,7 @@ body {
 	top: 0px;
 }
 
-.boxstudy_wrapper {
+div.boxstudy_wrapper {
 	position: relative;
 	top: 7.2vh;
 	left: 0px;
@@ -219,7 +219,7 @@ body {
 	overflow: hidden;
 }
 
-.StdClose {
+div.StdClose {
 	background-color: transparent;
 	border: none;
 	position: absolute;
@@ -232,18 +232,18 @@ body {
 	cursor: pointer;
 }
 
-.phy_button_holder {
+div.phy_button_holder {
 	position: relative;
 	background-color: green;
 	width: 100%;
 	height: 60px;
 }
 
-.btnS1,
-.btnS2,
-.btnS3,
-.btnS4,
-.btnS5 {
+div.btnS1,
+div.btnS2,
+div.btnS3,
+div.btnS4,
+div.btnS5 {
 	background-color: green;
 	position: relative;
 	display: inline-flex;
@@ -261,14 +261,14 @@ body {
 	margin: 0px;
 }
 
-.btnS1,
-.btnS2,
-.btnS3 {
+div.btnS1,
+div.btnS2,
+div.btnS3 {
 	color: cornsilk;
 }
 
-.btnS4,
-.btnS5 {
+div.btnS4,
+div.btnS5 {
 	color: burlywood;
 }
 
@@ -276,13 +276,13 @@ button:focus {
 	outline: 0px;
 }
 
-.btntxt {
+div.btntxt {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 
-.btntxt:hover {
+div.btntxt:hover {
 	background-color: rgba(95, 212, 201, 0.3);
 	border-radius: 9px;
 	border-width: 1px;
@@ -292,7 +292,7 @@ button:focus {
 	border-image: initial;
 }
 
-.t_btntxt {
+span.t_btntxt {
 	padding-top: 18px;
 	position: relative;
 	top: 16%;
@@ -300,7 +300,7 @@ button:focus {
 	transition: 0s;
 }
 
-.phy1Box {
+div.phy1Box {
 	position: absolute;
 	top: 60px;
 	width: 100%;
@@ -309,7 +309,7 @@ button:focus {
 	visibility: hidden;
 }
 
-.phy2Box {
+div.phy2Box {
 	position: absolute;
 	top: 60px;
 	width: 100%;
@@ -319,7 +319,7 @@ button:focus {
 }
 
 /* phy2 content */
-.b_cnt_one {
+div.b_cnt_one {
 	position: relative;
 	bottom: 0px;
 	left: 0px;
@@ -332,7 +332,7 @@ button:focus {
 
 /* list managment */
 
-.tpc_list {
+ul.tpc_list {
 	list-style-image: url(../img/aero.png);
 	list-style-position: outside;
 	padding-top: 0px;
@@ -343,7 +343,7 @@ button:focus {
 	color: white;
 }
 
-.tpcs:hover .tpclink {
+li.tpcs:hover .tpclink {
 	color: orange;
 	text-decoration: underline;
 }
@@ -352,9 +352,9 @@ button:focus {
 	color: #E1F222;
 }
 
-.l_nm,
-.ll_nm,
-.lll_nm {
+ul.l_nm,
+ul.ll_nm,
+ul.lll_nm {
 	list-style-image: url(../img/hash.png);
 	font-size: 26px;
 }
@@ -366,7 +366,7 @@ ul {
 	color: white;
 }
 
-.b_cnt_one ul .b_name {
+div.b_cnt_one ul li.b_name {
 	background-color: #11cac2;
 	font-size: 40px;
 	width: 248px;
@@ -387,7 +387,7 @@ ul {
 	background-color: #4A8492;
 }
 
-.b_cnt_two {
+div.b_cnt_two {
 	width: 454.33px;
 	height: 546px;
 	position: relative;
@@ -398,7 +398,7 @@ ul {
 	overflow: scroll;
 }
 
-.b_cnt_two ul .b_name {
+div.b_cnt_two ul li.b_name {
 	background-color: #11cac2;
 	font-size: 40px;
 	width: 248px;
@@ -419,7 +419,7 @@ ul {
 	background-color: #4A8492;
 }
 
-.b_cnt_thr {
+div.b_cnt_thr {
 	width: 454.33px;
 	height: 546px;
 	position: relative;
@@ -430,7 +430,7 @@ ul {
 	overflow: scroll;
 }
 
-.b_cnt_thr ul .b_name {
+div.b_cnt_thr ul li.b_name {
 	background-color: #11cac2;
 	font-size: 40px;
 	width: 248px;
@@ -440,19 +440,19 @@ ul {
 	list-style-type: none;
 }
 
-.lll_nm li {
+ul.lll_nm li {
 	padding: 5px;
 	margin: 3px;
 	background-color: #0A434B;
 	width: 180px;
 }
 
-.lll_nm li:hover {
+ul.lll_nm li:hover {
 	background-color: #4A8492;
 }
 
 /* list managment ends here */
-.phy3Box {
+div.phy3Box {
 	position: absolute;
 	top: 60px;
 	width: 100%;
@@ -461,7 +461,7 @@ ul {
 	visibility: hidden;
 }
 
-.close_btn_animation_1 {
+div.close_btn_animation_1 {
 	width: 8px;
 	height: 8px;
 	background-color: rgba(0, 20, 255, 0.53);
@@ -474,7 +474,7 @@ ul {
 	animation: resize1 1s infinite;
 }
 
-.close_btn_animation_2 {
+div.close_btn_animation_2 {
 	width: 10px;
 	height: 10px;
 	background-color: rgba(0, 255, 20, 0.58);
@@ -569,7 +569,7 @@ ul {
 }
 
 /* animationEnd */
-.supportbox {
+div.supportbox {
 	position: absolute;
 	left: 77vw;
 	top: 8.4vh;
@@ -582,7 +582,7 @@ ul {
 	visibility: hidden;
 }
 
-.suplink {
+a.suplink {
 	text-decoration: none;
 	font-size: 20px;
 	color: cadetblue;
@@ -591,39 +591,39 @@ ul {
 	text-align: left;
 }
 
-.suptext {
+h1.suptext {
 	font-family: monospace;
 	background-color: red;
 	text-align: center;
 }
 
-.suptext:hover {
+h1.suptext:hover {
 	color: white;
 	background-color: black;
 }
 
-.supportbox a {
+div.supportbox a {
 	position: relative;
 	left: 18px;
 }
 
-.supportbox a:hover {
+div.supportbox a:hover {
 	color: orange;
 }
 
-.supicon {
+img.supicon {
 	position: relative;
 	left: -8px;
 	width: 20px;
 	height: 20px;
 }
 
-.sup5 {
+img.sup5 {
 	width: 20px;
 	height: 15px;
 }
 
-.helpbox {
+div.helpbox {
 	position: absolute;
 	left: 68vw;
 	top: 8.4vh;
@@ -637,7 +637,7 @@ ul {
 	visibility: hidden;
 }
 
-.helpbox .q_help {
+div.helpbox p.q_help {
 	font-size: 20px;
 	color: black;
 	font-weight: 600;
@@ -646,7 +646,7 @@ ul {
 	border-radius: 9px;
 }
 
-.helpbox .a_help {
+div.helpbox p.a_help {
 	font-size: 20px;
 	color: black;
 	font-family: monospace;
@@ -656,7 +656,7 @@ ul {
 	border-radius: 10px;
 }
 
-.helpbox .h_footer {
+div.helpbox p.h_footer {
 	position: relative;
 	top: 0%;
 	left: 2%;
@@ -665,7 +665,7 @@ ul {
 }
 
 /* laoding zone... */
-.loader {
+div.loader {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -677,7 +677,7 @@ ul {
 	z-index: 130;
 }
 
-.loader .loaderHolder {
+div.loader .loaderHolder {
 	position: absolute;
 	top: 60%;
 	left: 50%;
@@ -686,7 +686,7 @@ ul {
 	z-index: 121;
 }
 
-.loader div img {
+div.loader div img {
 	width: 400px;
 	position: relative;
 	left: 50%;
@@ -696,7 +696,7 @@ ul {
 }
 
 /* iframe container */
-.c_hdr {
+iframe.c_hdr {
 	width: 103%;
 	height: 5605px;
 	border: none;
@@ -708,7 +708,7 @@ ul {
 }
 
 /* contribute */
-.cont {
+div.cont {
 	position: fixed;
 	background-color: white;
 	width: 260px;
@@ -723,15 +723,15 @@ ul {
 	transition: 1s;
 }
 
-.c_l_b {
+div.c_l_b {
 	left: 99%;
 }
 
-.c_l_a {
+div.c_l_a {
 	left: 72%;
 }
 
-.cont .p-f {
+div.cont p.p-f {
 	position: absolute;
 	top: 0px;
 	font-size: 20px;
@@ -741,7 +741,7 @@ ul {
 	color: #11cac2;
 }
 
-.cont .p-f .k_m {
+div.cont p.p-f span.k_m {
 	position: relative;
 	left: 0px;
 	font-size: 10px;
@@ -750,7 +750,7 @@ ul {
 	color: blue;
 }
 
-.cont .p-s {
+div.cont p.p-s {
 	position: relative;
 	top: 38px;
 	left: 2px;
@@ -759,7 +759,7 @@ ul {
 	font-family: Montserrat;
 }
 
-.cont .c_i {
+div.cont img.c_i {
 	position: relative;
 	width: 170px;
 	top: 40px;
@@ -767,7 +767,7 @@ ul {
 	border: 1px solid green;
 }
 
-.cont .c_opener {
+div.cont div.c_opener {
 	position: relative;
 	top: 64px;
 	left: -104px;
@@ -782,7 +782,7 @@ ul {
 	cursor: pointer;
 }
 
-.cont .c_opener span {
+div.cont div.c_opener span {
 	position: relative;
 	left: 0%;
 	top: 0px;
@@ -792,7 +792,7 @@ ul {
 }
 
 /* footer content */
-.footer {
+div.footer {
 	background-color: #1b2e3e;
 	width: 100%;
 	height: 600px;
@@ -803,14 +803,13 @@ ul {
 	top: 39px;
 }
 
-.topFooter {
+div.topFooter {
 	width: 100%;
 	position: relative;
 	left: 0%;
-	height: 250px;
 }
 
-.ownerImage {
+div.ownerImage {
 	position: relative;
 	left: 0px;
 	width: 20%;
@@ -818,14 +817,14 @@ ul {
 	float: left;
 }
 
-.ownimg {
+img.ownimg {
 	width: 100px;
 	position: relative;
 	left: 147px;
 	top: 50px;
 }
 
-.ownerDetail {
+div.ownerDetail {
 	position: relative;
 	left: 0px;
 	float: left;
@@ -833,11 +832,11 @@ ul {
 	height: 100%;
 }
 
-.o_d {
+div.o_d {
 	position: relative;
 }
 
-.odLable {
+p.odLable {
 	position: relative;
 	color: gray;
 	top: 40px;
@@ -845,7 +844,7 @@ ul {
 	font-family: Pacifico;
 }
 
-.odName {
+p.odName {
 	position: relative;
 	color: orange;
 	top: 0px;
@@ -854,7 +853,7 @@ ul {
 	line-height: 43px;
 }
 
-.fooLogo {
+img.fooLogo {
 	width: 20%;
 	height: 100%;
 	position: relative;
@@ -875,14 +874,14 @@ ul {
 	}
 }
 
-.decideLater {
+div.decideLater {
 	position: relative;
 	left: 0px;
 	float: left;
 	width: 20%;
 }
 
-.footerContent_holder {
+div.footerContent_holder {
 	position: relative;
 	top: 0px;
 	left: 0px;
@@ -890,7 +889,7 @@ ul {
 	height: 350px;
 }
 
-.about {
+div.about {
 	font-family: Sawarabi Mincho;
 	position: relative;
 	left: 0px;
@@ -898,7 +897,7 @@ ul {
 	height: 100%;
 }
 
-.a_c_h {
+div.a_c_h {
 	position: relative;
 	left: 104px;
 	top: 24px;
@@ -906,12 +905,12 @@ ul {
 	height: 260px;
 }
 
-.about h1 {
+div.about h1 {
 	color: white;
 	text-align: center;
 }
 
-.about p {
+div.about p {
 	width: 150px;
 	position: relative;
 	left: 29px;
@@ -919,7 +918,7 @@ ul {
 	color: #656b6a;
 }
 
-.notes {
+div.notes {
 	font-family: Sawarabi Mincho;
 	text-align: center;
 	position: relative;
@@ -929,39 +928,39 @@ ul {
 	height: 100%;
 }
 
-.notes h1 {
+div.notes h1 {
 	color: white;
 }
 
-.footer_facebook {
+img.footer_facebook {
 	position: relative;
 	left: 20px;
 	top: 61px;
 	width: 60px;
 }
 
-.footer_google {
+img.footer_google {
 	position: relative;
 	left: 40px;
 	top: 61px;
 	width: 60px;
 }
 
-.footer_youtube {
+img.footer_youtube {
 	position: relative;
 	left: 60px;
 	top: 61px;
 	width: 60px;
 }
 
-.footer hr {
+div.footer hr {
 	position: relative;
 	left: 0px;
 	width: 700px;
 	height: 0px;
 }
 
-.help_footer {
+div.help_footer {
 	font-family: Sawarabi Mincho;
 	text-align: center;
 	position: relative;
@@ -971,7 +970,7 @@ ul {
 	height: 100%;
 }
 
-.f_sr {
+div.f_sr {
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -983,14 +982,14 @@ ul {
 	overflow: scroll;
 }
 
-.f_sr_img {
+img.f_sr_img {
 	width: 720px;
 	height: 1000px;
 	left: 20%;
 	position: relative;
 }
 
-.resetFsr {
+div.resetFsr {
 	font-family: Montserrat;
 	width: 20px;
 	height: 20px;
@@ -1001,4 +1000,105 @@ ul {
 	position: fixed;
 	left: 97%;
 	top: 0px;
+}
+@media screen and (max-width: 600px) {
+	div.header{
+		height: 76px;
+		border:none;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		-ms-border-radius: 0px;
+		-o-border-radius: 0px;
+}
+	span.hometext{
+		display: none;
+	}
+	span.studytext{
+		display: none;
+	}
+	span.s_N_a{
+		font-size: 2em;
+		position: relative;
+		left: 30px;
+		top: 9px;
+	}span.s_N_b{
+		font-size: 2em;
+		position: relative;
+		top: 34px;
+		left: -11px;
+	}
+	img.homeicon {
+		width: 3em;
+		left: 5em;
+		top: 0px;
+	}img.studyicon{
+		width: 3em;
+		left: 7em;
+		top: 0px;
+	}img.supporticon{
+		width: 2em;
+		height: 2em;
+	}div.support{
+		top: 2em;
+		left: 24em;
+	}div.help{
+		top: 2em;
+		left: 27.4em;
+	}img.helpicon{
+		width: 2em;
+	}div.footer{
+		width: 101%;
+		height: 100em;
+		top: 47px;
+		left: -8px;
+	}div.ownerImage{
+		width: 40%;
+		left: 3em;
+		top: 10px;
+	}img.ownimg{
+		width: 6em;
+		left: 0px;
+		top: 0px;
+	}div.ownerDetail{
+		width: 60%;
+		left: 0em;
+		top: 10px;
+	}p.odLable{
+		top: 0px;
+		left: 0px;
+		font-size: 1em;
+	}
+	p.odName{
+		top: -7px;
+		left: 0px;
+		font-size: 1.5em;
+		line-height: 1em;
+	}div.fooLogoHolder{
+		position: relative;
+		top: 0px;
+		left: 10px;
+		width: 100%;
+	}img.fooLogo{
+		left: 12em;
+	}div.social-contact{
+		width: 100%;
+		position: relative;
+		top: 2em;
+	}div.footer hr{
+		top: 6em;
+		width: 20em;
+		left: -3em;
+	}div.footerContent_holder{
+		width: 100%;
+	}div.about{
+		position: relative;
+		top: 4em;
+	}div.notes{
+		position: relative;
+		top: 0em;
+	}div.help_footer{
+		position: relative;
+		top: 0em;
+	}
 }
