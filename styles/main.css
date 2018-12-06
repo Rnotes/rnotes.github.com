@@ -1001,7 +1001,7 @@ div.resetFsr {
 	left: 97%;
 	top: 0px;
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	div.header{
 		height: 76px;
 		border:none;
